@@ -3,18 +3,20 @@
     package="booyah.test">
 
     <application
+        android:name="booyah.test.NFLPresenter"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="booyah.test.LoginScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="booyah.test.WeekGames" ></activity>
     </application>
 
 </manifest>
