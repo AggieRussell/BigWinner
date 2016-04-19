@@ -1,25 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/gridWeekGames">
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:id="@+id/tableWeekGames"
+    android:scrollIndicators="right"
+    android:nestedScrollingEnabled="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text=""
-        android:id="@+id/greetingView"
-        android:padding="25px"
-        android:layout_row="0"
-        android:layout_column="0" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/yearView"
-        android:padding="25px"
-        android:layout_row="0"
-        android:layout_column="23" />
-</GridLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="greeting"
+            android:id="@+id/greetingView"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/yearView"
+            android:padding="10dp"
+            android:gravity="right"
+            android:text="year" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Week"
+            android:id="@+id/weekView"
+            android:paddingBottom="10dp"
+            android:layout_span="2"
+            android:layout_gravity="center_horizontal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_span="2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical"
+            android:id="@+id/rg1"
+            android:visibility="visible">
+
+            <RadioButton
+                android:text="Team 1"
+                android:id="@+id/radioButton1"
+                android:layout_column="0"
+                android:checked="false" />
+
+            <RadioButton
+                android:text="Team 2"
+                android:id="@+id/radioButton2"
+                android:layout_column="0"
+                android:checked="false" />
+        </RadioGroup>
+    </TableRow>
+
+    <View android:layout_width="match_parent"
+        android:id="@+id/l1"
+        android:background="@color/DarkBlue"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_span="2"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical"
+            android:id="@+id/rg2"
+            android:visibility="visible">
+
+            <RadioButton
+                android:text="Team 3"
+                android:id="@+id/radioButton3"
+                android:layout_column="0"
+                android:checked="false" />
+
+            <RadioButton
+                android:text="Team 4"
+                android:id="@+id/radioButton4"
+                android:layout_column="0"
+                android:checked="false" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_span = "2"
+        android:gravity="center">
+
+        <Button
+            android:text="Submit"
+            android:id="@+id/submitButton"
+            android:layout_gravity="center"
+            android:layout_column="0" />
+    </TableRow>
+
+</TableLayout>

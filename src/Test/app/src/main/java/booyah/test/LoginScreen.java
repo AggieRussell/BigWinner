@@ -16,7 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Created by Christine on 4/16/16.
+ * Created by Christine Russell on 4/16/16.
  */
 public class LoginScreen extends Activity {
 
@@ -24,7 +24,7 @@ public class LoginScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginscreen);
 
-        final RelativeLayout lm = (RelativeLayout) findViewById(R.id.linearLogin);
+        final RelativeLayout lm = (RelativeLayout) findViewById(R.id.relativeLogin);
         final TextView user = (TextView) findViewById(R.id.username);
         final Spinner spinner = (Spinner) findViewById(R.id.seasonSpinner);
         final Button login = (Button) findViewById(R.id.loginButton);
@@ -42,6 +42,7 @@ public class LoginScreen extends Activity {
             //    msg.setText(s);
 
                 p.setM(name,year);
+                p.resetWeek();
 
                 Intent i = new Intent(getBaseContext(), WeekGames.class);
                 startActivity(i);
@@ -49,4 +50,5 @@ public class LoginScreen extends Activity {
         });
 
     }
+
 }

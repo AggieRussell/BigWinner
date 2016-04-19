@@ -1,14 +1,20 @@
 package booyah.test;
 
 /**
- * Created by Christine on 4/16/16.
+ * Created by Christine Russell on 4/16/16.
  */
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.app.Application;
 import android.widget.ArrayAdapter;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
+
+import java.util.ArrayList;
+
 import static java.lang.System.out;
 
 public class NFLPresenter extends Application {
@@ -16,13 +22,14 @@ public class NFLPresenter extends Application {
     //NFLView v;
     NFLModel m;
 
-    int x;
+    ArrayList<String> picks = new ArrayList<String>();
+
+    int week;
 
     public NFLPresenter(){
     //    v = new NFLView();
         m = new NFLModel();
-        x=0;
-        out.printf("pres x = %d\n", x);
+        week = 0;
     }
 
     public void setM(String u, String s) {
@@ -41,4 +48,48 @@ public class NFLPresenter extends Application {
         return m.getSeason();
     }
 
+    public void increaseWeek() {
+        ++week;
+    }
+
+    public int getWeek() {
+        return week;
+    }
+
+    public void resetWeek() {
+        week = 0;
+    }
+
+    public void resetGames() {
+        m.resetGames();
+    }
+
+    public void setGames() {
+        m.setGames(week);
+    }
+
+    public void setPicks(ArrayList<String> p) {
+        picks.clear();
+        picks = p;
+    }
+
+    public ArrayList<String> getHome() {
+        return m.getHome();
+    }
+
+    public ArrayList<String> getAway() {
+        return m.getAway();
+    }
+
+    public ArrayList<String> getPicks() {
+        return picks;
+    }
+
+    public ArrayList<String> getWinners() {
+        return m.getWinners(week);
+    }
+
+    public double getWklyUserAccuracy() {
+        return m.getWklyUserAccuracy(picks);
+    }
 }
