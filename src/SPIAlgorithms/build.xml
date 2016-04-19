@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project default="compile-all" name="PredictionServiceDemo">
+
+    <target name="compile-all">
+        <ant target="compile" antfile="build.xml" dir="PredictionServiceProvider"/>
+        <ant target="compile" antfile="build.xml" dir="PredictionDemo"/>
+        <ant target="compile" antfile="build.xml" dir="PowerRanking"/>
+        <ant target="compile" antfile="build.xml" dir="AIBased"/>
+		<ant target="compile" antfile="build.xml" dir="PiRating"/>
+    </target>
+
+    <target name="compile-abort">
+        <ant target="compile" antfile="build.xml" dir="PredictionServiceProvider"/>    
+        <ant target="compile" antfile="build.xml" dir="PredictionDemo"/>
+        <ant target="compile" antfile="build.xml" dir="PowerRanking"/>
+		<ant target="compile" antfile="build.xml" dir="AIBased"/>
+		<ant target="compile" antfile="build.xml" dir="PiRating"/>
+    </target>
+
+    <target name="clean">
+        <ant target="clean" antfile="build.xml" dir="PredictionDemo"/>
+        <ant target="clean" antfile="build.xml" dir="PredictionServiceProvider"/>
+        <ant target="clean" antfile="build.xml" dir="PowerRanking"/>
+		<ant target="clean" antfile="build.xml" dir="AIBased"/>
+		<ant target="clean" antfile="build.xml" dir="PiRating"/>
+    </target>
+
+    <target name="jar">
+        <ant target="jar" antfile="build.xml" dir="PredictionDemo"/>
+        <ant target="jar" antfile="build.xml" dir="PredictionServiceProvider"/>
+        <ant target="jar" antfile="build.xml" dir="PowerRanking"/>
+		<ant target="jar" antfile="build.xml" dir="AIBased"/>
+		<ant target="jar" antfile="build.xml" dir="PiRating"/>
+    </target>
+
+    <target name="zip">
+        <delete file="./PredictionServiceDemo.zip"/>
+        <zip destfile="./PredictionServiceDemo.zip"
+            basedir="."
+            excludes="**/*.zip"/>
+    </target>
+
+</project>

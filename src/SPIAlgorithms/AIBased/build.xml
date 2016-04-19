@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="rbcpsample" default="all" basedir=".">
+
+  <path id="CLASSPATH">
+    <pathelement path="../PredictionServiceProvider/build"/>
+    <pathelement location="../PredictionServiceProvider/dist/PredictionServiceProvider.jar"/>
+    <pathelement location="."/>
+  </path>
+
+  <target name="clean">
+    <delete dir="build"/>
+    <delete dir="dist"/>
+  </target>
+
+  <target name="compile"  description="Compile AIBased">
+    <mkdir dir="build" />
+    <javac srcdir="src"
+         includeantruntime="true"
+         destdir="build"
+         fork="yes"
+         debug="on">
+        <classpath refid="CLASSPATH"/>
+        <compilerarg value="-g"/>
+        <compilerarg value="-Xlint:overrides"/>
+        <compilerarg value="-Xlint:unchecked"/>
+    </javac>
+    <mkdir dir="build/META-INF"/>
+    <mkdir dir="build/META-INF/services"/>
+    <copy file="src/META-INF/services/predictor.spi.Predictor"
+      todir="build/META-INF/services"/>
+  </target>
+
+  <target name="jar" depends="compile">
+    <mkdir dir="dist"/>
+    <jar destfile="dist/AIBased.jar" basedir="build"/>
+  </target>
+  
+</project>

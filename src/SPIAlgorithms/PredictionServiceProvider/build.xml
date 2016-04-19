@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="PredictionServiceProvider" default="all" basedir=".">
+
+  <target name="clean">
+    <delete dir="build"/>
+    <delete dir="dist"/>
+  </target>
+
+  <target name="compile"  description="Compile Prediction service provider">
+    <mkdir dir="build" />
+
+    <javac srcdir="src"
+         includeantruntime="true"
+         destdir="build"
+         fork="yes"
+         debug="on">
+        <compilerarg value="-g"/>
+        <compilerarg value="-Xlint:overrides"/>
+        <compilerarg value="-Xlint:unchecked"/>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile">
+    <mkdir dir="dist"/>
+    <jar destfile="dist/PredictionServiceProvider.jar" basedir="build"/>
+  </target>
+</project>
