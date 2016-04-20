@@ -6,7 +6,6 @@ All source code is found in: ./src
 
 The ./src folder contains all of the code we have developed for Project Avalanche.  
 * ./src/DatabaseTest - Still in development  
-* ./src/NFLApp - Still in development  
 * ./src/ServiceProviderTest - Still in development  
 * ./src/SPIAlgorithms - Algorithm code for Services, not standalone applications  
 * ./src/Test - Current working demo  
