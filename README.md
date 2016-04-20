@@ -1,6 +1,8 @@
 # Project Avalanche - Team Booyah
 ## Mario Aguilar, Margaret Baxter, Patrick Quach, Christine Russell
 All SCRUM documents are found in: ./scrumdocs  
+All screenshots are found in: ./images/screenshots
+All source code is found in: ./src
 
 The ./src folder contains all of the code we have developed for Project Avalanche.  
 ./src/DatabaseTest - Still in development  
