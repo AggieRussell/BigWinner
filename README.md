@@ -1,4 +1,5 @@
-# avalanche
+# Project Avalanche - Team Booyah
+## Mario Aguilar, Margaret Baxter, Patrick Quach, Christine Russell
 All SCRUM documents are found in: ./scrumdocs  
 
 The ./src folder contains all of the code we have developed for Project Avalanche.  
@@ -11,11 +12,13 @@ The ./src folder contains all of the code we have developed for Project Avalanch
 Current Working Demo: ./src/Test  
 Emulator: Nexus 5 API 23  
 To run:  
-	Open Android Studio  
+
+		Open Android Studio  
 		File->Open  
 			./src/Test		  
 		Run->Run 'app'  
 		Device: Nexus 5 API 23  
+		
 		"...After a long time of waiting for the emulator to load..."  
 		
 		Enter a username  
