@@ -1,22 +1,37 @@
 package com.example.owner.databasetest;
+
+import android.app.ListActivity;
 import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
-import java.util.*;
-public class MainActivity extends AppCompatActivity {
+import android.widget.ListAdapter;
+import android.widget.SimpleCursorAdapter;
+
+public class MainActivity extends ListActivity {
+
+    private Cursor employees;
+    private DBHelper db;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        TextView score = (TextView) findViewById(R.id.textView);
-        DBHelper db = new DBHelper(this);
-       // List<Column> out = db.select("2015", 1);
-        Cursor out = db.select("2015",1);
-        out.moveToFirst();
-        String output = out.getString(out.getColumnIndex("Home"));
-        score.setText(output);
 
+        db = new DBHelper(this);
+        employees = db.getEmployees(); // you would not typically call this on the main thread
+
+        ListAdapter adapter = new SimpleCursorAdapter(this,
+                android.R.layout.simple_list_item_1,
+                employees,
+                new String[] {"Home"},
+                new int[] {android.R.id.text1});
+
+        getListView().setAdapter(adapter);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        employees.close();
+        db.close();
+    }
+
 }
