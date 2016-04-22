@@ -80,7 +80,7 @@ public class WeekGames extends Activity {
                     }
                 }
                 if (!picksForAll) {
-                    Toast toast2 = Toast.makeText(getApplicationContext(), "Please pick a winner for each game.", Toast.LENGTH_SHORT);
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Please pick a winner for each game", Toast.LENGTH_SHORT);
                     toast2.setGravity(Gravity.CENTER, 0, 0);
                     toast2.show();
                 }

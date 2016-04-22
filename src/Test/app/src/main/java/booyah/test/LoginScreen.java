@@ -41,12 +41,19 @@ public class LoginScreen extends Activity {
                 String year = spinner.getSelectedItem().toString();
             //    msg.setText(s);
 
-                p.setM(name,year);
-                p.resetWeek();
+                if (name.equals("")) {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Please enter a username", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.show();
+                }
+                else {
+                    p.setM(name,year);
+                    p.resetWeek();
 
-                Intent i = new Intent(getBaseContext(), WeekGames.class);
-                startActivity(i);
-                finish();
+                    Intent i = new Intent(getBaseContext(), WeekGames.class);
+                    startActivity(i);
+                    finish();
+                }
             }
         });
 
