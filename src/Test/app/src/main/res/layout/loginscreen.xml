@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="NFL Game Predictor"
+        android:text="Big Winner Predictor"
         android:id="@+id/welcome"
         android:gravity="center"
         android:layout_alignParentTop="true"

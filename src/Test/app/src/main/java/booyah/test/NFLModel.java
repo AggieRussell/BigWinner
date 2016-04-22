@@ -49,6 +49,7 @@ public class NFLModel {
     public void resetGames() {
         home.clear();
         away.clear();
+        winners.clear();
     }
 
     public void setGames(int week) {
@@ -58,6 +59,26 @@ public class NFLModel {
             away.add("Saints");
             home.add("Texans");
             away.add("Cowboys");
+            home.add("Falcons");
+            away.add("Saints");
+            home.add("Texans");
+            away.add("Cowboys");
+            home.add("Falcons");
+            away.add("Saints");
+            home.add("Texans");
+            away.add("Cowboys");
+            home.add("Falcons");
+            away.add("Saints");
+            home.add("Texans");
+            away.add("Cowboys");
+        }
+        if (week == 2) {
+            home.add("Falcons");
+            away.add("Saints");
+            home.add("Texans");
+            away.add("Cowboys");
+            home.add("Falcons");
+            away.add("Saints");
         }
     }
 
@@ -75,6 +96,17 @@ public class NFLModel {
         if (week == 1) {
             winners.add("Falcons");
             winners.add("Texans");
+            winners.add("Falcons");
+            winners.add("Texans");
+            winners.add("Falcons");
+            winners.add("Texans");
+            winners.add("Falcons");
+            winners.add("Texans");
+        }
+        if (week == 2) {
+            winners.add("Falcons");
+            winners.add("Texans");
+            winners.add("Falcons");
         }
         return winners;
     }

@@ -46,6 +46,7 @@ public class LoginScreen extends Activity {
 
                 Intent i = new Intent(getBaseContext(), WeekGames.class);
                 startActivity(i);
+                finish();
             }
         });
 

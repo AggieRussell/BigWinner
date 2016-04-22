@@ -47,13 +47,15 @@ public class WeekGames extends Activity {
         year.setText(y);
         week.setText("Week " + p.getWeek() + " Games");
 
-        String name = p.getUser();
-        int duration = Toast.LENGTH_SHORT;
-        String s = "Welcome " + name + "!";
-        Toast toast = Toast.makeText(getApplicationContext(), s, duration);
-        toast.setGravity(Gravity.CENTER, 0, 0);
-        toast.show();
+        if (p.getWeek()==1) {
+            String name = p.getUser();
+            String s = "Welcome " + name + "!";
+            Toast toast = Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.show();
+        }
 
+        p.resetGames();
         p.setGames();
 
         ArrayList<String> h = p.getHome();
@@ -64,18 +66,32 @@ public class WeekGames extends Activity {
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 ArrayList<String> picks = new ArrayList<String>();
+                boolean picksForAll = true;
                 for(int i = 0; i<games.size(); ++i) {
                     if (games.get(i).getVisibility() == View.VISIBLE) {
+                        if (games.get(i).getCheckedRadioButtonId() == -1) {
+                            picksForAll = false;
+                            break;
+                        }
                         String s = ((RadioButton)findViewById(games.get(i).getCheckedRadioButtonId())).getText().toString();
                         if (s.charAt(0) == '@')
                             s = s.substring(2);
                         picks.add(s);
                     }
                 }
-                p.setPicks(picks);
+                if (!picksForAll) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Please pick a winner for each game.", Toast.LENGTH_SHORT);
+                    toast2.setGravity(Gravity.CENTER, 0, 0);
+                    toast2.show();
+                }
+                else {
+                    p.setPicks(picks);
 
-                Intent i = new Intent(getBaseContext(), WeekResults.class);
-                startActivity(i);
+                    Intent i = new Intent(getBaseContext(), WeekResults.class);
+                    startActivity(i);
+                    finish();
+                }
+
             }
         });
     }
@@ -87,16 +103,40 @@ public class WeekGames extends Activity {
         lines.clear();
         away.add((RadioButton) findViewById(R.id.radioButton1));
         away.add((RadioButton) findViewById(R.id.radioButton3));
+        away.add((RadioButton) findViewById(R.id.radioButton5));
+        away.add((RadioButton) findViewById(R.id.radioButton7));
+        away.add((RadioButton) findViewById(R.id.radioButton9));
+        away.add((RadioButton) findViewById(R.id.radioButton11));
+        away.add((RadioButton) findViewById(R.id.radioButton13));
+        away.add((RadioButton) findViewById(R.id.radioButton15));
         home.add((RadioButton) findViewById(R.id.radioButton2));
         home.add((RadioButton) findViewById(R.id.radioButton4));
+        home.add((RadioButton) findViewById(R.id.radioButton6));
+        home.add((RadioButton) findViewById(R.id.radioButton8));
+        home.add((RadioButton) findViewById(R.id.radioButton10));
+        home.add((RadioButton) findViewById(R.id.radioButton12));
+        home.add((RadioButton) findViewById(R.id.radioButton14));
+        home.add((RadioButton) findViewById(R.id.radioButton16));
         games.add((RadioGroup) findViewById(R.id.rg1));
         games.add((RadioGroup) findViewById(R.id.rg2));
+        games.add((RadioGroup) findViewById(R.id.rg3));
+        games.add((RadioGroup) findViewById(R.id.rg4));
+        games.add((RadioGroup) findViewById(R.id.rg5));
+        games.add((RadioGroup) findViewById(R.id.rg6));
+        games.add((RadioGroup) findViewById(R.id.rg7));
+        games.add((RadioGroup) findViewById(R.id.rg8));
         lines.add((View) findViewById(R.id.l1));
+        lines.add((View) findViewById(R.id.l2));
+        lines.add((View) findViewById(R.id.l3));
+        lines.add((View) findViewById(R.id.l4));
+        lines.add((View) findViewById(R.id.l5));
+        lines.add((View) findViewById(R.id.l6));
+        lines.add((View) findViewById(R.id.l7));
         for(int i = 0; i < games.size(); ++i) {
-            games.get(i).setVisibility(View.INVISIBLE);
+            games.get(i).setVisibility(View.GONE);
         }
         for(int i = 0; i < lines.size(); ++i) {
-            lines.get(i).setVisibility(View.INVISIBLE);
+            lines.get(i).setVisibility(View.GONE);
         }
     }
 
@@ -105,12 +145,10 @@ public class WeekGames extends Activity {
             away.get(i).setText(a.get(i));
             home.get(i).setText("@ " + h.get(i));
             games.get(i).setVisibility(View.VISIBLE);
-            if (i < lines.size())
+            if (i < h.size()-1)
                 lines.get(i).setVisibility(View.VISIBLE);
         }
     }
-
-
 
     protected void onDestroy() {
 
