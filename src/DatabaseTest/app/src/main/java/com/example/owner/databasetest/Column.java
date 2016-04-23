@@ -32,12 +32,12 @@ public class Column {
     }
 
     //Parameterized constructor
-    public Column(String newName, String newType) {
+    public Column(String newName) {
         this();
         name = newName;
 
         //If the type is string determine maxLength
-        if(newType.length() > 7 && (newType.substring(0,7)).equals("VARCHAR")) {
+        /*if(newType.length() > 7 && (newType.substring(0,7)).equals("VARCHAR")) {
             type = "String";
             maxLength = Integer.parseInt(newType.substring(8,newType.length()-1));
         }
@@ -46,9 +46,10 @@ public class Column {
         }
         else if(newType.toUpperCase().equals("DOUBLE")) {
             type = "double";
-        }
-        else type = "String";
+        }*/
 
+        type = "String";
+        maxLength = 10;
         values = new ArrayList<Object>();
     }
 

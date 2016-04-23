@@ -14,8 +14,9 @@ public class MainActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         db = new DBHelper(this);
+        db.getGames("2015", 1);
+      /*  db = new DBHelper(this);
         employees = db.getEmployees(); // you would not typically call this on the main thread
 
         ListAdapter adapter = new SimpleCursorAdapter(this,
@@ -24,7 +25,7 @@ public class MainActivity extends ListActivity {
                 new String[] {"Home"},
                 new int[] {android.R.id.text1});
 
-        getListView().setAdapter(adapter);
+        getListView().setAdapter(adapter);*/
     }
 
     @Override
