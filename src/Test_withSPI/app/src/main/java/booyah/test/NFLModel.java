@@ -5,6 +5,7 @@ package booyah.test;
  */
 
 import java.util.ArrayList;
+//import predictor.PredictionService;
 import android.app.Activity;
 import android.app.Application;
 import android.app.ListActivity;
@@ -14,7 +15,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
-import java.util.ArrayList;
 
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 import static java.lang.System.out;
@@ -26,10 +26,13 @@ public class NFLModel{
     ArrayList<String> home = new ArrayList<String>();
     ArrayList<String> away = new ArrayList<String>();
     ArrayList<String> winners = new ArrayList<String>();
+ //   ArrayList<ArrayList<String>> weekList = new ArrayList<ArrayList<String>>();
+ //   private static PredictionService service;
 
     public NFLModel() {
         user = ".";
         season = ".";
+ //       service = PredictionService.getInstance();
         out.printf("user: %s\nseason: %s\n", user, season);
     }
 
@@ -73,33 +76,6 @@ public class NFLModel{
             home.add(homeTeam);
             away.add(awayTeam);
         }
-
- /*       if (week == 1) {
-            home.add("Falcons");
-            away.add("Saints");
-            home.add("Texans");
-            away.add("Cowboys");
-            home.add("Falcons");
-            away.add("Saints");
-            home.add("Texans");
-            away.add("Cowboys");
-            home.add("Falcons");
-            away.add("Saints");
-            home.add("Texans");
-            away.add("Cowboys");
-            home.add("Falcons");
-            away.add("Saints");
-            home.add("Texans");
-            away.add("Cowboys");
-        }
-        if (week == 2) {
-            home.add("Falcons");
-            away.add("Saints");
-            home.add("Texans");
-            away.add("Cowboys");
-            home.add("Falcons");
-            away.add("Saints");
-        }*/
     }
 
     public ArrayList<String> getHome() {
@@ -112,7 +88,14 @@ public class NFLModel{
 
     public ArrayList<String> getWinners(int week) {
         //dummy code for demo purposes
+  //      int seasonYear = Integer.parseInt(season);
+  //      weekList = service.getPrediction(seasonYear, week, "AIBased");
         winners.clear();
+
+  /*      for(int i=0; i<weekList.get(0).size(); ++i) {
+            winners.add(weekList.get(2).get(i));
+        }*/
+
         if (week == 1) {
             winners.add("Falcons");
             winners.add("Texans");

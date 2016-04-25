@@ -40,10 +40,6 @@ public class NFLPresenter extends Application {
         out.println("pres setM");
     }
 
- /*   public void setDb (DBHelper dbHelper) {
-        m.setDb(dbHelper);
-    }
-*/
     public String getUser() {
         out.println("pres getUser");
         return m.getUser();

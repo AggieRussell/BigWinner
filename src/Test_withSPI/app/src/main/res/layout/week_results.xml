@@ -45,419 +45,436 @@
             android:layout_gravity="center_horizontal" />
     </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 1"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game1" />
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:id="@+id/tableWeekResults2"
+            android:scrollIndicators="right"
+            android:nestedScrollingEnabled="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 1"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner1" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 1"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 2"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 1"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner1" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 2"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner2" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 2"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game2" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 3"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 2"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner2" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 3"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner3" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 3"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game3" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 4"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 3"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner3" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 4"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner4" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 4"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 5"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 4"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner4" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 5"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner5" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 5"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game5" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 6"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game6" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 5"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner5" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 6"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner6" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 6"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game6" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 7"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game7" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 6"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner6" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 7"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner7" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 7"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game7" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 8"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game8" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 7"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner7" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 8"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner8" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 8"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game8" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 9"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game9" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 8"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner8" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 9"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner9" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 9"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game9" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 10"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game10" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 9"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner9" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 10"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner10" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 10"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game10" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 11"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game11" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 10"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner10" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 11"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner11" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 11"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game11" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 12"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game12" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 11"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner11" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 12"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner12" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 12"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game12" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 13"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game13" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 12"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner12" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 13"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner13" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 13"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game13" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 14"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game14" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 13"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner13" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 14"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner14" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 14"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game14" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 15"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game15" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 14"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner14" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 15"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner15" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 15"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game15" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Game 16"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:id="@+id/game16" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 15"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner15" />
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Winner 16"
-            android:layout_gravity="right"
-            android:paddingBottom="5dp"
-            android:paddingRight="10dp"
-            android:id="@+id/winner16" />
-    </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_span="2"
-        android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Game 16"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/game16" />
 
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="User Accuracy"
-            android:id="@+id/userAcc"
-            android:layout_gravity="center"
-            android:padding="20dp"
-            android:layout_column="0" />
-    </TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Winner 16"
+                    android:layout_gravity="right"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/winner16" />
+            </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_span = "2"
-        android:gravity="center">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:gravity="center">
 
-        <Button
-            android:text="Play Again"
-            android:id="@+id/againButton"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:padding="20dp"
-            android:layout_column="0" />
-    </TableRow>
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="User Accuracy"
+                    android:id="@+id/userAcc"
+                    android:layout_gravity="center"
+                    android:padding="20dp"
+                    android:layout_column="0" />
+            </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span = "2"
+                android:gravity="center">
+
+                <Button
+                    android:text="Play Again"
+                    android:id="@+id/againButton"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:padding="20dp"
+                    android:layout_column="0" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
 
 </TableLayout>

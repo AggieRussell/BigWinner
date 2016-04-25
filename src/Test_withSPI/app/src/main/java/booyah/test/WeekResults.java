@@ -31,7 +31,7 @@ public class WeekResults extends Activity {
         final TextView userAcc = (TextView) findViewById(R.id.userAcc);
         final Button again = (Button) findViewById(R.id.againButton);
 
-        if (p.getWeek() < 2)
+        if (p.getWeek() < 17)
             again.setText("NEXT WEEK");
         else
             again.setText("PLAY AGAIN");
@@ -51,7 +51,7 @@ public class WeekResults extends Activity {
 
         again.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (p.getWeek() < 2) {
+                if (p.getWeek() < 17) {
                     Intent i = new Intent(getBaseContext(), WeekGames.class);
                     startActivity(i);
                     finish();
@@ -79,6 +79,13 @@ public class WeekResults extends Activity {
         games.add((TextView) findViewById(R.id.game7));
         games.add((TextView) findViewById(R.id.game8));
         games.add((TextView) findViewById(R.id.game9));
+        games.add((TextView) findViewById(R.id.game10));
+        games.add((TextView) findViewById(R.id.game11));
+        games.add((TextView) findViewById(R.id.game12));
+        games.add((TextView) findViewById(R.id.game13));
+        games.add((TextView) findViewById(R.id.game14));
+        games.add((TextView) findViewById(R.id.game15));
+        games.add((TextView) findViewById(R.id.game16));
         winners.add((TextView) findViewById(R.id.winner1));
         winners.add((TextView) findViewById(R.id.winner2));
         winners.add((TextView) findViewById(R.id.winner3));
@@ -88,6 +95,13 @@ public class WeekResults extends Activity {
         winners.add((TextView) findViewById(R.id.winner7));
         winners.add((TextView) findViewById(R.id.winner8));
         winners.add((TextView) findViewById(R.id.winner9));
+        winners.add((TextView) findViewById(R.id.winner10));
+        winners.add((TextView) findViewById(R.id.winner11));
+        winners.add((TextView) findViewById(R.id.winner12));
+        winners.add((TextView) findViewById(R.id.winner13));
+        winners.add((TextView) findViewById(R.id.winner14));
+        winners.add((TextView) findViewById(R.id.winner15));
+        winners.add((TextView) findViewById(R.id.winner16));
         for (int i = 0; i<games.size(); ++i) {
             games.get(i).setVisibility(View.GONE);
             winners.get(i).setVisibility(View.GONE);
