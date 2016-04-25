@@ -15,12 +15,15 @@ import java.util.ArrayList;
  */
 public class WeekResults extends Activity {
 
+    private DBHelper db;
     final ArrayList<TextView> games = new ArrayList<TextView>();
     final ArrayList<TextView> winners = new ArrayList<TextView>();
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.week_results);
+
+        db = new DBHelper(this);
 
         final NFLPresenter p = (NFLPresenter) getApplicationContext();
 
@@ -44,7 +47,7 @@ public class WeekResults extends Activity {
 
         resetResults();
 
-        displayWinners(p);
+        displayWinners(p, db);
 
         String uA = String.format("%.2f",p.getWklyUserAccuracy()) + "%";
         userAcc.setText("Your accuracy: " + uA);
@@ -108,8 +111,8 @@ public class WeekResults extends Activity {
         }
     }
 
-    private void displayWinners(NFLPresenter p) {
-        ArrayList<String> w = p.getWinners();
+    private void displayWinners(NFLPresenter p, DBHelper db) {
+        ArrayList<String> w = p.getWinners(db);
         ArrayList<String> h = p.getHome();
         ArrayList<String> a = p.getAway();
         ArrayList<String> picks = p.getPicks();

@@ -86,17 +86,19 @@ public class NFLModel{
         return away;
     }
 
-    public ArrayList<String> getWinners(int week) {
-        //dummy code for demo purposes
-  //      int seasonYear = Integer.parseInt(season);
-  //      weekList = service.getPrediction(seasonYear, week, "AIBased");
+    public ArrayList<String> getWinners(DBHelper db, int week) {
         winners.clear();
+        int yearNum = Integer.parseInt(season);
 
-  /*      for(int i=0; i<weekList.get(0).size(); ++i) {
-            winners.add(weekList.get(2).get(i));
-        }*/
-
-        if (week == 1) {
+        ArrayList<Column> weekSchedule = db.getGames(yearNum, week);
+        for(int i=0; i<weekSchedule.get(0).size(); ++i) {
+            int homeTeamScore = Integer.parseInt((String)weekSchedule.get(4).getCol().get(i));
+            int awayTeamScore = Integer.parseInt((String)weekSchedule.get(5).getCol().get(i));
+            if(homeTeamScore > awayTeamScore)
+                winners.add((String) weekSchedule.get(2).getCol().get(i));
+            else winners.add((String) weekSchedule.get(3).getCol().get(i));
+        }
+  /*      if (week == 1) {
             winners.add("Falcons");
             winners.add("Texans");
             winners.add("Falcons");
@@ -110,7 +112,7 @@ public class NFLModel{
             winners.add("Falcons");
             winners.add("Texans");
             winners.add("Falcons");
-        }
+        }*/
         return winners;
     }
 

@@ -87,8 +87,8 @@ public class NFLPresenter extends Application {
         return picks;
     }
 
-    public ArrayList<String> getWinners() {
-        return m.getWinners(week);
+    public ArrayList<String> getWinners(DBHelper db) {
+        return m.getWinners(db, week);
     }
 
     public double getWklyUserAccuracy() {

@@ -15,7 +15,7 @@ public class DBHelper extends SQLiteAssetHelper {
 
     private static final int DATABASE_VERSION = 1;
 
-    public DBHelper(WeekGames context) {
+    public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         SQLiteDatabase db = getReadableDatabase();
         db.close();
