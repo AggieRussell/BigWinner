@@ -18,7 +18,6 @@
         </activity>
         <activity android:name="booyah.test.WeekGames" ></activity>
         <activity android:name="booyah.test.WeekResults" ></activity>
-
     </application>
 
 </manifest>

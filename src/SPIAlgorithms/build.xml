@@ -4,7 +4,6 @@
 
     <target name="compile-all">
         <ant target="compile" antfile="build.xml" dir="PredictionServiceProvider"/>
-        <ant target="compile" antfile="build.xml" dir="PredictionDemo"/>
         <ant target="compile" antfile="build.xml" dir="PowerRanking"/>
         <ant target="compile" antfile="build.xml" dir="AIBased"/>
 		<ant target="compile" antfile="build.xml" dir="PiRating"/>
@@ -12,14 +11,12 @@
 
     <target name="compile-abort">
         <ant target="compile" antfile="build.xml" dir="PredictionServiceProvider"/>    
-        <ant target="compile" antfile="build.xml" dir="PredictionDemo"/>
         <ant target="compile" antfile="build.xml" dir="PowerRanking"/>
 		<ant target="compile" antfile="build.xml" dir="AIBased"/>
 		<ant target="compile" antfile="build.xml" dir="PiRating"/>
     </target>
 
     <target name="clean">
-        <ant target="clean" antfile="build.xml" dir="PredictionDemo"/>
         <ant target="clean" antfile="build.xml" dir="PredictionServiceProvider"/>
         <ant target="clean" antfile="build.xml" dir="PowerRanking"/>
 		<ant target="clean" antfile="build.xml" dir="AIBased"/>
@@ -27,7 +24,6 @@
     </target>
 
     <target name="jar">
-        <ant target="jar" antfile="build.xml" dir="PredictionDemo"/>
         <ant target="jar" antfile="build.xml" dir="PredictionServiceProvider"/>
         <ant target="jar" antfile="build.xml" dir="PowerRanking"/>
 		<ant target="jar" antfile="build.xml" dir="AIBased"/>

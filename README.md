@@ -5,18 +5,19 @@ All screenshots are found in: ./images/screenshots
 All source code is found in: ./src
 
 The ./src folder contains all of the code we have developed for Project Avalanche.  
-* ./src/DatabaseTest - Still in development  
-* ./src/ServiceProviderTest - Still in development  
+* ./src/DatabaseTest - Working database test. No GUI, just testing SQLite.
+* ./src/ServiceProviderTest - Still in development
 * ./src/SPIAlgorithms - Algorithm code for Services, not standalone applications  
-* ./src/Test - Current working demo  
+* ./src/Test - First working demo  
+* ./src/Test_withSPI - Second working demo  
 
-**Current Working Demo:** ./src/Test  
+**Current Working Demo:** ./src/Test_withSPI  
 **Emulator:** Nexus 5 API 23  
 **To run:**
 
 		Open Android Studio  
 		File->Open  
-			./src/Test		  
+			./src/Test_withSPI		  
 		Run->Run 'app'  
 		Device: Nexus 5 API 23  
 		
@@ -26,6 +27,8 @@ The ./src folder contains all of the code we have developed for Project Avalanch
 		Pick a season  
 		Login  
 		
-		Pick a team for first two games  
+		Make your picks for each week  
 		Submit  
-		Yay! It works! :)  
+		Get results back  
+		Continue with next week  
+		Try a different season after 17 weeks of simulation  

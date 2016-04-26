@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':PredictionServiceProvider', ':AIBased', ':PiRating', ':PowerRanking'

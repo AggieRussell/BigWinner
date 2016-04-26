@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AIBased/AIBased.iml" filepath="$PROJECT_DIR$/AIBased/AIBased.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PiRating/PiRating.iml" filepath="$PROJECT_DIR$/PiRating/PiRating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PowerRanking/PowerRanking.iml" filepath="$PROJECT_DIR$/PowerRanking/PowerRanking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PredictionServiceProvider/PredictionServiceProvider.iml" filepath="$PROJECT_DIR$/PredictionServiceProvider/PredictionServiceProvider.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test_withSPI.iml" filepath="$PROJECT_DIR$/Test_withSPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
