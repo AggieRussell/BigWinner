@@ -15,7 +15,7 @@ public class MainActivity extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         db = new DBHelper(this);
-        db.getGames("2015", 1);
+        db.getGames(2015, 1);
       /*  db = new DBHelper(this);
         employees = db.getEmployees(); // you would not typically call this on the main thread
 
