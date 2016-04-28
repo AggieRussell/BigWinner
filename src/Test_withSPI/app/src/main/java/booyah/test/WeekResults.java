@@ -32,12 +32,7 @@ public class WeekResults extends Activity {
         final TextView year = (TextView) findViewById(R.id.yearView);
         final TextView week = (TextView) findViewById(R.id.weekView);
         final TextView userAcc = (TextView) findViewById(R.id.userAcc);
-        final Button again = (Button) findViewById(R.id.againButton);
-
-        if (p.getWeek() < 17)
-            again.setText("NEXT WEEK");
-        else
-            again.setText("PLAY AGAIN");
+        final Button next = (Button) findViewById(R.id.nextButton);
 
         String u = "User: " + p.getUser();
         String y = "Season: " + p.getSeason();
@@ -52,7 +47,7 @@ public class WeekResults extends Activity {
         String uA = String.format("%.2f",p.getWklyUserAccuracy()) + "%";
         userAcc.setText("Your accuracy: " + uA);
 
-        again.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (p.getWeek() < 17) {
                     Intent i = new Intent(getBaseContext(), WeekGames.class);
@@ -60,7 +55,7 @@ public class WeekResults extends Activity {
                     finish();
                 }
                 else {
-                    Intent i = new Intent(getBaseContext(), LoginScreen.class);
+                    Intent i = new Intent(getBaseContext(), SeasonResults.class);
                     startActivity(i);
                     finish();
                 }

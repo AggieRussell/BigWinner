@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +25,7 @@ public class LoginScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginscreen);
 
-        final RelativeLayout lm = (RelativeLayout) findViewById(R.id.relativeLogin);
+        final TableLayout lm = (TableLayout) findViewById(R.id.tableLogin);
         final TextView user = (TextView) findViewById(R.id.username);
         final Spinner spinner = (Spinner) findViewById(R.id.seasonSpinner);
         final Button login = (Button) findViewById(R.id.loginButton);

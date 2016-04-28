@@ -94,7 +94,6 @@ public class WeekGames extends Activity {
                     startActivity(i);
                     finish();
                 }
-
             }
         });
     }
@@ -159,14 +158,6 @@ public class WeekGames extends Activity {
         lines.add((View) findViewById(R.id.l5));
         lines.add((View) findViewById(R.id.l6));
         lines.add((View) findViewById(R.id.l7));
-        lines.add((View) findViewById(R.id.l8));
-        lines.add((View) findViewById(R.id.l9));
-        lines.add((View) findViewById(R.id.c20));
-        lines.add((View) findViewById(R.id.c21));
-        lines.add((View) findViewById(R.id.c22));
-        lines.add((View) findViewById(R.id.c23));
-        lines.add((View) findViewById(R.id.c24));
-        lines.add((View) findViewById(R.id.c25));
         for(int i = 0; i < games.size(); ++i) {
             games.get(i).setVisibility(View.GONE);
         }
@@ -185,13 +176,12 @@ public class WeekGames extends Activity {
             away.get(i).setText(a.get(i));
             home.get(i).setText("@ " + h.get(i));
             games.get(i).setVisibility(View.VISIBLE);
-            if (i < h.size()-1)
+            if (i < games.size()/2-1)
                 lines.get(i).setVisibility(View.VISIBLE);
         }
     }
 
     protected void onDestroy() {
-
         super.onDestroy();
         db.close();
     }

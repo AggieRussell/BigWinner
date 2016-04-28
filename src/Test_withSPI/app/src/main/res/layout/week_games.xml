@@ -10,13 +10,15 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/CustomBlue">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="greeting"
+            android:textColor="@color/WhiteSmoke"
             android:id="@+id/greetingView"
             android:padding="10dp" />
 
@@ -25,6 +27,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/yearView"
+            android:textColor="@color/WhiteSmoke"
             android:padding="10dp"
             android:gravity="right"
             android:text="year" />
@@ -32,13 +35,15 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/CustomBlue">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Week"
+            android:textColor="@color/WhiteSmoke"
             android:id="@+id/weekView"
             android:paddingBottom="10dp"
             android:layout_span="2"
@@ -63,51 +68,53 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:orientation="vertical"
-                    android:id="@+id/rg1"
-                    android:visibility="visible">
+                    android:layout_span="1"
+                    >
 
-                    <RadioButton
-                        android:text="Team 1"
-                        android:id="@+id/radioButton1"
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:checked="false" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/rg1"
+                        android:visibility="visible">
 
-                    <RadioButton
-                        android:text="Team 2"
-                        android:id="@+id/radioButton2"
-                        android:layout_column="0"
-                        android:checked="false" />
-                </RadioGroup>
-            </TableRow>
+                        <RadioButton
+                            android:text="Team 1"
+                            android:id="@+id/radioButton1"
+                            android:layout_column="0"
+                            android:checked="false" />
 
-            <View android:layout_width="match_parent"
-                android:id="@+id/l1"
-                android:background="@color/DarkBlue"
-                android:layout_height="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                        <RadioButton
+                            android:text="Team 2"
+                            android:id="@+id/radioButton2"
+                            android:layout_column="0"
+                            android:checked="false" />
+                    </RadioGroup>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:background="@color/CustomBlue" />
+
+                </LinearLayout>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
+                    android:paddingRight="25dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="right"
                     android:orientation="vertical"
                     android:id="@+id/rg2"
                     android:visibility="visible">
@@ -115,75 +122,73 @@
                     <RadioButton
                         android:text="Team 3"
                         android:id="@+id/radioButton3"
-                        android:layout_column="0"
                         android:checked="false" />
 
                     <RadioButton
                         android:text="Team 4"
                         android:id="@+id/radioButton4"
-                        android:layout_column="0"
                         android:checked="false" />
                 </RadioGroup>
+
             </TableRow>
 
             <View android:layout_width="match_parent"
-                android:id="@+id/l2"
-                android:background="@color/DarkBlue"
+                android:id="@+id/l1"
+                android:background="@color/CustomBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginRight="25dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:orientation="vertical"
-                    android:id="@+id/rg3"
-                    android:visibility="visible">
+                    android:layout_span="1"
+                    >
 
-                    <RadioButton
-                        android:text="Team 5"
-                        android:id="@+id/radioButton5"
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:checked="false" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/rg3"
+                        android:visibility="visible">
 
-                    <RadioButton
-                        android:text="Team 6"
-                        android:id="@+id/radioButton6"
-                        android:layout_column="0"
-                        android:checked="false" />
-                </RadioGroup>
-            </TableRow>
+                        <RadioButton
+                            android:text="Team 5"
+                            android:id="@+id/radioButton5"
+                            android:layout_column="0"
+                            android:checked="false" />
 
-            <View android:layout_width="match_parent"
-                android:id="@+id/l3"
-                android:background="@color/DarkBlue"
-                android:layout_height="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                        <RadioButton
+                            android:text="Team 6"
+                            android:id="@+id/radioButton6"
+                            android:layout_column="0"
+                            android:checked="false" />
+                    </RadioGroup>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:background="@color/CustomBlue" />
+
+                </LinearLayout>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical"
                     android:id="@+id/rg4"
                     android:visibility="visible">
@@ -191,75 +196,72 @@
                     <RadioButton
                         android:text="Team 7"
                         android:id="@+id/radioButton7"
-                        android:layout_column="0"
                         android:checked="false" />
 
                     <RadioButton
                         android:text="Team 8"
                         android:id="@+id/radioButton8"
-                        android:layout_column="0"
                         android:checked="false" />
                 </RadioGroup>
             </TableRow>
 
             <View android:layout_width="match_parent"
-                android:id="@+id/l4"
-                android:background="@color/DarkBlue"
+                android:id="@+id/l2"
+                android:background="@color/CustomBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginRight="25dp" />
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:orientation="vertical"
-                    android:id="@+id/rg5"
-                    android:visibility="visible">
+                    android:layout_span="1"
+                    >
 
-                    <RadioButton
-                        android:text="Team 9"
-                        android:id="@+id/radioButton9"
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:checked="false" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/rg5"
+                        android:visibility="visible">
 
-                    <RadioButton
-                        android:text="Team 10"
-                        android:id="@+id/radioButton10"
-                        android:layout_column="0"
-                        android:checked="false" />
-                </RadioGroup>
-            </TableRow>
+                        <RadioButton
+                            android:text="Team 9"
+                            android:id="@+id/radioButton9"
+                            android:layout_column="0"
+                            android:checked="false" />
 
-            <View android:layout_width="match_parent"
-                android:id="@+id/l5"
-                android:background="@color/DarkBlue"
-                android:layout_height="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                        <RadioButton
+                            android:text="Team 10"
+                            android:id="@+id/radioButton10"
+                            android:layout_column="0"
+                            android:checked="false" />
+                    </RadioGroup>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:background="@color/CustomBlue" />
+
+                </LinearLayout>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical"
                     android:id="@+id/rg6"
                     android:visibility="visible">
@@ -267,75 +269,73 @@
                     <RadioButton
                         android:text="Team 11"
                         android:id="@+id/radioButton11"
-                        android:layout_column="0"
                         android:checked="false" />
 
                     <RadioButton
                         android:text="Team 12"
                         android:id="@+id/radioButton12"
-                        android:layout_column="0"
                         android:checked="false" />
                 </RadioGroup>
+
             </TableRow>
 
             <View android:layout_width="match_parent"
-                android:id="@+id/l6"
-                android:background="@color/DarkBlue"
+                android:id="@+id/l3"
+                android:background="@color/CustomBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginRight="25dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:orientation="vertical"
-                    android:id="@+id/rg7"
-                    android:visibility="visible">
+                    android:layout_span="1"
+                    >
 
-                    <RadioButton
-                        android:text="Team 13"
-                        android:id="@+id/radioButton13"
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:checked="false" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/rg7"
+                        android:visibility="visible">
 
-                    <RadioButton
-                        android:text="Team 14"
-                        android:id="@+id/radioButton14"
-                        android:layout_column="0"
-                        android:checked="false" />
-                </RadioGroup>
-            </TableRow>
+                        <RadioButton
+                            android:text="Team 13"
+                            android:id="@+id/radioButton13"
+                            android:layout_column="0"
+                            android:checked="false" />
 
-            <View android:layout_width="match_parent"
-                android:id="@+id/l7"
-                android:background="@color/DarkBlue"
-                android:layout_height="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                        <RadioButton
+                            android:text="Team 14"
+                            android:id="@+id/radioButton14"
+                            android:layout_column="0"
+                            android:checked="false" />
+                    </RadioGroup>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:background="@color/CustomBlue" />
+
+                </LinearLayout>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical"
                     android:id="@+id/rg8"
                     android:visibility="visible">
@@ -343,75 +343,73 @@
                     <RadioButton
                         android:text="Team 15"
                         android:id="@+id/radioButton15"
-                        android:layout_column="0"
                         android:checked="false" />
 
                     <RadioButton
                         android:text="Team 16"
                         android:id="@+id/radioButton16"
-                        android:layout_column="0"
                         android:checked="false" />
                 </RadioGroup>
+
             </TableRow>
 
             <View android:layout_width="match_parent"
-                android:id="@+id/l8"
-                android:background="@color/DarkBlue"
+                android:id="@+id/l4"
+                android:background="@color/CustomBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginRight="25dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:orientation="vertical"
-                    android:id="@+id/rg9"
-                    android:visibility="visible">
+                    android:layout_span="1"
+                    >
 
-                    <RadioButton
-                        android:text="Team 17"
-                        android:id="@+id/radioButton17"
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:checked="false" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/rg9"
+                        android:visibility="visible">
 
-                    <RadioButton
-                        android:text="Team 18"
-                        android:id="@+id/radioButton18"
-                        android:layout_column="0"
-                        android:checked="false" />
-                </RadioGroup>
-            </TableRow>
+                        <RadioButton
+                            android:text="Team 17"
+                            android:id="@+id/radioButton17"
+                            android:layout_column="0"
+                            android:checked="false" />
 
-            <View android:layout_width="match_parent"
-                android:id="@+id/l9"
-                android:background="@color/DarkBlue"
-                android:layout_height="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                        <RadioButton
+                            android:text="Team 18"
+                            android:id="@+id/radioButton18"
+                            android:layout_column="0"
+                            android:checked="false" />
+                    </RadioGroup>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:background="@color/CustomBlue" />
+
+                </LinearLayout>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical"
                     android:id="@+id/rg10"
                     android:visibility="visible">
@@ -419,75 +417,73 @@
                     <RadioButton
                         android:text="Team 19"
                         android:id="@+id/radioButton19"
-                        android:layout_column="0"
                         android:checked="false" />
 
                     <RadioButton
                         android:text="Team 20"
                         android:id="@+id/radioButton20"
-                        android:layout_column="0"
                         android:checked="false" />
                 </RadioGroup>
+
             </TableRow>
 
             <View android:layout_width="match_parent"
-                android:id="@+id/c20"
-                android:background="@color/DarkBlue"
+                android:id="@+id/l5"
+                android:background="@color/CustomBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginRight="25dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:orientation="vertical"
-                    android:id="@+id/rg11"
-                    android:visibility="visible">
+                    android:layout_span="1"
+                    >
 
-                    <RadioButton
-                        android:text="Team 21"
-                        android:id="@+id/radioButton21"
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:checked="false" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/rg11"
+                        android:visibility="visible">
 
-                    <RadioButton
-                        android:text="Team 22"
-                        android:id="@+id/radioButton22"
-                        android:layout_column="0"
-                        android:checked="false" />
-                </RadioGroup>
-            </TableRow>
+                        <RadioButton
+                            android:text="Team 21"
+                            android:id="@+id/radioButton21"
+                            android:layout_column="0"
+                            android:checked="false" />
 
-            <View android:layout_width="match_parent"
-                android:id="@+id/c21"
-                android:background="@color/DarkBlue"
-                android:layout_height="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                        <RadioButton
+                            android:text="Team 22"
+                            android:id="@+id/radioButton22"
+                            android:layout_column="0"
+                            android:checked="false" />
+                    </RadioGroup>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:background="@color/CustomBlue" />
+
+                </LinearLayout>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical"
                     android:id="@+id/rg12"
                     android:visibility="visible">
@@ -495,75 +491,73 @@
                     <RadioButton
                         android:text="Team 23"
                         android:id="@+id/radioButton23"
-                        android:layout_column="0"
                         android:checked="false" />
 
                     <RadioButton
                         android:text="Team 24"
                         android:id="@+id/radioButton24"
-                        android:layout_column="0"
                         android:checked="false" />
                 </RadioGroup>
+
             </TableRow>
 
             <View android:layout_width="match_parent"
-                android:id="@+id/c22"
-                android:background="@color/DarkBlue"
+                android:id="@+id/l6"
+                android:background="@color/CustomBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginRight="25dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:orientation="vertical"
-                    android:id="@+id/rg13"
-                    android:visibility="visible">
+                    android:layout_span="1"
+                    >
 
-                    <RadioButton
-                        android:text="Team 25"
-                        android:id="@+id/radioButton25"
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:checked="false" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/rg13"
+                        android:visibility="visible">
 
-                    <RadioButton
-                        android:text="Team 26"
-                        android:id="@+id/radioButton26"
-                        android:layout_column="0"
-                        android:checked="false" />
-                </RadioGroup>
-            </TableRow>
+                        <RadioButton
+                            android:text="Team 25"
+                            android:id="@+id/radioButton25"
+                            android:layout_column="0"
+                            android:checked="false" />
 
-            <View android:layout_width="match_parent"
-                android:id="@+id/c23"
-                android:background="@color/DarkBlue"
-                android:layout_height="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                        <RadioButton
+                            android:text="Team 26"
+                            android:id="@+id/radioButton26"
+                            android:layout_column="0"
+                            android:checked="false" />
+                    </RadioGroup>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:background="@color/CustomBlue" />
+
+                </LinearLayout>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical"
                     android:id="@+id/rg14"
                     android:visibility="visible">
@@ -571,75 +565,73 @@
                     <RadioButton
                         android:text="Team 27"
                         android:id="@+id/radioButton27"
-                        android:layout_column="0"
                         android:checked="false" />
 
                     <RadioButton
                         android:text="Team 28"
                         android:id="@+id/radioButton28"
-                        android:layout_column="0"
                         android:checked="false" />
                 </RadioGroup>
+
             </TableRow>
 
             <View android:layout_width="match_parent"
-                android:id="@+id/c24"
-                android:background="@color/DarkBlue"
+                android:id="@+id/l7"
+                android:background="@color/CustomBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                android:layout_marginRight="25dp"/>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:orientation="vertical"
-                    android:id="@+id/rg15"
-                    android:visibility="visible">
+                    android:layout_span="1"
+                    >
 
-                    <RadioButton
-                        android:text="Team 29"
-                        android:id="@+id/radioButton29"
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
                         android:layout_column="0"
-                        android:checked="false" />
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:id="@+id/rg15"
+                        android:visibility="visible">
 
-                    <RadioButton
-                        android:text="Team 30"
-                        android:id="@+id/radioButton30"
-                        android:layout_column="0"
-                        android:checked="false" />
-                </RadioGroup>
-            </TableRow>
+                        <RadioButton
+                            android:text="Team 29"
+                            android:id="@+id/radioButton29"
+                            android:layout_column="0"
+                            android:checked="false" />
 
-            <View android:layout_width="match_parent"
-                android:id="@+id/c25"
-                android:background="@color/DarkBlue"
-                android:layout_height="1dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp" />
+                        <RadioButton
+                            android:text="Team 30"
+                            android:id="@+id/radioButton30"
+                            android:layout_column="0"
+                            android:checked="false" />
+                    </RadioGroup>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:background="@color/CustomBlue" />
+
+                </LinearLayout>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_span="2"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical"
                     android:id="@+id/rg16"
                     android:visibility="visible">
@@ -647,15 +639,14 @@
                     <RadioButton
                         android:text="Team 31"
                         android:id="@+id/radioButton31"
-                        android:layout_column="0"
                         android:checked="false" />
 
                     <RadioButton
                         android:text="Team 32"
                         android:id="@+id/radioButton32"
-                        android:layout_column="0"
                         android:checked="false" />
                 </RadioGroup>
+
             </TableRow>
 
             <TableRow

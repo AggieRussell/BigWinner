@@ -23,9 +23,11 @@ public class NFLModel{
 
     private String user;
     private String season;
-    ArrayList<String> home = new ArrayList<String>();
-    ArrayList<String> away = new ArrayList<String>();
-    ArrayList<String> winners = new ArrayList<String>();
+    private ArrayList<String> home = new ArrayList<String>();
+    private ArrayList<String> away = new ArrayList<String>();
+    private ArrayList<String> winners = new ArrayList<String>();
+    private double numCorrect;
+    private double numGames;
  //   ArrayList<ArrayList<String>> weekList = new ArrayList<ArrayList<String>>();
     private PredictionService service;
 
@@ -64,6 +66,13 @@ public class NFLModel{
         home.clear();
         away.clear();
         winners.clear();
+    }
+
+    public void resetSeason() {
+        user = ".";
+        season = ".";
+        numCorrect = 0;
+        numGames = 0;
     }
 
     public void setGames(DBHelper db, int week) {
@@ -117,19 +126,26 @@ public class NFLModel{
     }
 
     public double getWklyUserAccuracy(ArrayList<String> picks) {
-        double numCorrect = 0;
-        double numGames = 0;
+        double wklyNumCorrect = 0;
+        double wklyNumGames = 0;
         for (int i = 0; i < winners.size(); ++i) {
             out.println(winners.get(i));
             out.println(picks.get(i));
             if (winners.get(i).equals(picks.get(i)))
-                numCorrect++;
-            numGames++;
+                wklyNumCorrect++;
+            wklyNumGames++;
         }
-        out.println(numCorrect);
-        double x = numCorrect/numGames;
-        out.println(x);
+        out.println("Weekly Number Correct: " + wklyNumCorrect);
+        double x = wklyNumCorrect/wklyNumGames;
+        out.println("Weekly User Accuracy: " + x);
+        numCorrect += wklyNumCorrect;
+        numGames += wklyNumGames;
         return x;
+
+    }
+
+    public double getSeasonUserAccuracy() {
+        return numCorrect/numGames;
     }
 
 }

@@ -259,7 +259,7 @@
         android:gravity="center">
 
         <Button
-            android:text="Play Again"
+            android:text="Next Week"
             android:id="@+id/againButton"
             android:layout_gravity="center"
             android:layout_margin="20dp"

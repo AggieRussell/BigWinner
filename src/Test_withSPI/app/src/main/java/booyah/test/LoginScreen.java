@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,10 +25,11 @@ public class LoginScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginscreen);
 
-        final RelativeLayout lm = (RelativeLayout) findViewById(R.id.relativeLogin);
+        final TableLayout lm = (TableLayout) findViewById(R.id.tableLogin);
         final TextView user = (TextView) findViewById(R.id.username);
         final Spinner spinner = (Spinner) findViewById(R.id.seasonSpinner);
         final Button login = (Button) findViewById(R.id.loginButton);
+        final Button instruct = (Button) findViewById(R.id.instructButton);
         final TextView msg = (TextView) findViewById(R.id.afterLogin);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.season_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -54,6 +56,14 @@ public class LoginScreen extends Activity {
                     startActivity(i);
                     finish();
                 }
+            }
+        });
+
+        instruct.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent i = new Intent(getBaseContext(), Instructions.class);
+                startActivity(i);
+                finish();
             }
         });
 

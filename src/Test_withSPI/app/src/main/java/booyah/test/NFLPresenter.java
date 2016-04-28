@@ -66,6 +66,8 @@ public class NFLPresenter extends Application {
         m.resetGames();
     }
 
+    public void resetSeason() { m.resetSeason(); }
+
     public void setGames(DBHelper db) {
         m.setGames(db, week);
     }
@@ -94,4 +96,6 @@ public class NFLPresenter extends Application {
     public double getWklyUserAccuracy() {
         return m.getWklyUserAccuracy(picks);
     }
+
+    public double getSeasonUserAccuracy() { return m.getSeasonUserAccuracy(); }
 }
