@@ -16,12 +16,10 @@ import java.util.ArrayList;
 public class SeasonResults extends Activity {
 
     private DBHelper db;
-    final ArrayList<TextView> games = new ArrayList<TextView>();
-    final ArrayList<TextView> winners = new ArrayList<TextView>();
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.week_results);
+        setContentView(R.layout.season_results);
 
         db = new DBHelper(this);
 

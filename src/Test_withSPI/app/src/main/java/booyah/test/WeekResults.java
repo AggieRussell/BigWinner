@@ -40,6 +40,11 @@ public class WeekResults extends Activity {
         year.setText(y);
         week.setText("Week " + p.getWeek() + " Results");
 
+        if (p.getWeek() < 17)
+            next.setText("Next Week");
+        else
+            next.setText("Final Results");
+
         resetResults();
 
         displayWinners(p, db);
