@@ -15,20 +15,20 @@ import java.util.ArrayList;
  */
 public class SeasonResults extends Activity {
 
-    private DBHelper db;
+//    private DBHelper db;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.season_results);
 
-        db = new DBHelper(this);
+//        db = new DBHelper(this);
 
         final NFLPresenter p = (NFLPresenter) getApplicationContext();
 
         final TableLayout lm = (TableLayout) findViewById(R.id.tableWeekResults);
         final TextView greeting = (TextView) findViewById(R.id.greetingView);
         final TextView year = (TextView) findViewById(R.id.yearView);
-        final TextView week = (TextView) findViewById(R.id.weekView);
+        final TextView season = (TextView) findViewById(R.id.seasonView);
         final TextView userAcc = (TextView) findViewById(R.id.userAcc);
         final Button again = (Button) findViewById(R.id.againButton);
 
@@ -36,7 +36,8 @@ public class SeasonResults extends Activity {
         String y = "Season: " + p.getSeason();
         greeting.setText(u);
         year.setText(y);
-        week.setText(p.getSeason() + " Season Results");
+        String s = "" + p.getSeason() + " Season Results";
+        season.setText(s);
 
         String uA = String.format("%.2f",p.getSeasonUserAccuracy()) + "%";
         userAcc.setText("Your accuracy: " + uA);

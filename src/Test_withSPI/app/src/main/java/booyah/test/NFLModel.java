@@ -140,12 +140,12 @@ public class NFLModel{
         out.println("Weekly User Accuracy: " + x);
         numCorrect += wklyNumCorrect;
         numGames += wklyNumGames;
-        return x;
+        return 100*x;
 
     }
 
     public double getSeasonUserAccuracy() {
-        return numCorrect/numGames;
+        return (100*numCorrect/numGames);
     }
 
 }
