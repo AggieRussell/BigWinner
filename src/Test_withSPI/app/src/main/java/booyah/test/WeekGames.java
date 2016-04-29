@@ -92,8 +92,7 @@ public class WeekGames extends Activity {
                 }
                 else {
                     p.setPicks(picks);
-                    if(p.getWeek() < 17)
-                        intenseSound.start();
+                    intenseSound.start();
 
                     Intent i = new Intent(getBaseContext(), WeekResults.class);
                     startActivity(i);
