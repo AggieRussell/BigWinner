@@ -2,6 +2,7 @@ package booyah.test;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,10 +17,26 @@ import java.util.ArrayList;
 public class SeasonResults extends Activity {
 
 //    private DBHelper db;
+    MediaPlayer playerWinsSound;
+    MediaPlayer playerLosesSound;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.season_results);
+        playerWinsSound = MediaPlayer.create(this,R.raw.applause);
+        playerLosesSound = MediaPlayer.create(this,R.raw.boo);
+
+        /**********************************************
+         *
+         * This needs to be configured to play the correct
+         * sound at the end of the simulation.
+         *
+         */
+        //if() // If player won
+        playerWinsSound.start();
+        //else // else computer won
+        //    playerLosesSound.start();
+        /************************************************/
 
 //        db = new DBHelper(this);
 

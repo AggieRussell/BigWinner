@@ -3,6 +3,7 @@ package booyah.test;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -21,9 +22,16 @@ import android.widget.Toast;
  */
 public class LoginScreen extends Activity {
 
+    MediaPlayer introSong;
+    MediaPlayer whistleSound;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginscreen);
+
+        introSong = MediaPlayer.create(this,R.raw.ftheme);
+        introSong.start();
+        whistleSound = MediaPlayer.create(this,R.raw.whistle);
 
         final TableLayout lm = (TableLayout) findViewById(R.id.tableLogin);
         final TextView user = (TextView) findViewById(R.id.username);
@@ -51,6 +59,8 @@ public class LoginScreen extends Activity {
                 else {
                     p.setM(name,year);
                     p.resetWeek();
+                    introSong.release();
+                    whistleSound.start();
 
                     Intent i = new Intent(getBaseContext(), WeekGames.class);
                     startActivity(i);
