@@ -2,6 +2,7 @@ package booyah.test;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 public class WeekResults extends Activity {
 
     private DBHelper db;
+    MediaPlayer whistleSound;
     final ArrayList<TextView> games = new ArrayList<TextView>();
     final ArrayList<TextView> winners = new ArrayList<TextView>();
 
@@ -23,6 +25,7 @@ public class WeekResults extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.week_results);
 
+        whistleSound = MediaPlayer.create(this,R.raw.whistle);
         db = new DBHelper(this);
 
         final NFLPresenter p = (NFLPresenter) getApplicationContext();
@@ -55,6 +58,7 @@ public class WeekResults extends Activity {
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (p.getWeek() < 17) {
+                    whistleSound.start();
                     Intent i = new Intent(getBaseContext(), WeekGames.class);
                     startActivity(i);
                     finish();

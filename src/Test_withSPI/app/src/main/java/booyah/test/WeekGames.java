@@ -2,6 +2,7 @@ package booyah.test;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -26,11 +27,13 @@ public class WeekGames extends Activity {
     final ArrayList<RadioButton> away = new ArrayList<RadioButton>();
     final ArrayList<RadioGroup> games = new ArrayList<RadioGroup>();
     final ArrayList<View> lines = new ArrayList<View>();
+    MediaPlayer intenseSound;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.week_games);
 
+        intenseSound = MediaPlayer.create(this,R.raw.suspense);
         db = new DBHelper(this);
 
         resetButtons();
@@ -89,6 +92,7 @@ public class WeekGames extends Activity {
                 }
                 else {
                     p.setPicks(picks);
+                    intenseSound.start();
 
                     Intent i = new Intent(getBaseContext(), WeekResults.class);
                     startActivity(i);

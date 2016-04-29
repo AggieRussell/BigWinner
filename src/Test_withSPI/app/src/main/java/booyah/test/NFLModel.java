@@ -5,7 +5,6 @@ package booyah.test;
  */
 
 import java.util.ArrayList;
-import predictor.PredictionService;
 import android.app.Activity;
 import android.app.Application;
 import android.app.ListActivity;
@@ -29,12 +28,10 @@ public class NFLModel{
     private double numCorrect;
     private double numGames;
  //   ArrayList<ArrayList<String>> weekList = new ArrayList<ArrayList<String>>();
-    private PredictionService service;
 
     public NFLModel() {
         user = ".";
         season = ".";
-        //service = PredictionService.getInstance();
         out.printf("user: %s\nseason: %s\n", user, season);
     }
 
