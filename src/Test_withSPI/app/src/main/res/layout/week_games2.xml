@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:id="@+id/tableWeekGames"
+    android:scrollIndicators="right"
+    android:nestedScrollingEnabled="true">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/CustomBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="greeting"
+            android:textColor="@color/WhiteSmoke"
+            android:id="@+id/greetingView"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/yearView"
+            android:textColor="@color/WhiteSmoke"
+            android:padding="10dp"
+            android:gravity="right"
+            android:text="year" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/CustomBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Week"
+            android:textColor="@color/WhiteSmoke"
+            android:id="@+id/weekView"
+            android:paddingBottom="10dp"
+            android:layout_span="2"
+            android:layout_gravity="center_horizontal" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_span="1"
+            >
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/rg1"
+                    android:visibility="visible">
+
+                    <RadioButton
+                        android:text="Team 1"
+                        android:id="@+id/radioButton1"
+                        android:layout_column="0"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:text="Team 2"
+                        android:id="@+id/radioButton2"
+                        android:layout_column="0"
+                        android:checked="false" />
+
+                </RadioGroup>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TableRow>
+
+</TableLayout>
