@@ -9,13 +9,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="booyah.test.LoginScreen">
+        <activity android:name="booyah.test.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="booyah.test.LoginScreen"></activity>
         <activity android:name="booyah.test.WeekGames" ></activity>
         <activity android:name="booyah.test.WeekResults" ></activity>
         <activity android:name="booyah.test.SeasonResults" ></activity>
