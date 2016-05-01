@@ -2,6 +2,8 @@ package booyah.test;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -185,8 +187,42 @@ public class WeekGames extends Activity {
 
             if(predictions.contains(a.get(i))) {
                 away.get(i).setTextColor(0xFF004995);
+                away.get(i).setTypeface(null, Typeface.BOLD_ITALIC);
             }
-            else home.get(i).setTextColor(0xFF004995);
+            else {
+                home.get(i).setTextColor(0xFF004995);
+                home.get(i).setTypeface(null, Typeface.BOLD_ITALIC);
+            }
+
+            //test radio button images
+            switch (a.get(i)) {
+                case "Falcons" :
+                    away.get(i).setButtonDrawable(R.drawable.falcons_selector);
+                    break;
+                case "Eagles" :
+                    away.get(i).setButtonDrawable(R.drawable.eagles_selector);
+                    break;
+                default :
+                    break;
+            }
+            switch (h.get(i)) {
+                case "Falcons" :
+                    home.get(i).setButtonDrawable(R.drawable.falcons_selector);
+                    break;
+                case "Eagles" :
+                    home.get(i).setButtonDrawable(R.drawable.eagles_selector);
+                    break;
+                default :
+                    break;
+            }
+
+        /*    if(a.get(i).equals("Falcons")) {
+                away.get(i).setButtonDrawable(R.drawable.falcons_selector);
+            }
+            else if (h.get(i).equals("Falcons")) {
+                home.get(i).setButtonDrawable(R.drawable.falcons_selector);
+            }
+        */
         }
     }
 
