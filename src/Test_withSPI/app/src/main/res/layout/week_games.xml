@@ -2,6 +2,7 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:shrinkColumns="*"
     android:stretchColumns="*"
     android:id="@+id/tableWeekGames"
@@ -388,7 +389,8 @@
                             android:background="@android:color/transparent"
                             android:button="@null"
                             android:checked="false"
-                            android:paddingStart="5dp"/>
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
 
                         <RadioButton
                             android:text="Team 18"
@@ -396,7 +398,8 @@
                             android:background="@android:color/transparent"
                             android:button="@null"
                             android:checked="false"
-                            android:paddingStart="5dp"/>
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
                     </RadioGroup>
 
                     <View

@@ -202,6 +202,9 @@ public class WeekGames extends Activity {
                 case "Eagles" :
                     away.get(i).setButtonDrawable(R.drawable.eagles_selector);
                     break;
+                case "Cardinals" :
+                    away.get(i).setButtonDrawable(R.drawable.cardinals_selector);
+                    break;
                 default :
                     break;
             }
@@ -211,6 +214,9 @@ public class WeekGames extends Activity {
                     break;
                 case "Eagles" :
                     home.get(i).setButtonDrawable(R.drawable.eagles_selector);
+                    break;
+                case "Cardinals" :
+                    home.get(i).setButtonDrawable(R.drawable.cardinals_selector);
                     break;
                 default :
                     break;
