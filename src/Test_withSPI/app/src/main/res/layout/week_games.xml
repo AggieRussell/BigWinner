@@ -11,7 +11,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/CustomBlue">
+        android:background="@color/NFLBlue">
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/CustomBlue">
+        android:background="@color/NFLBlue">
 
         <TextView
             android:layout_width="wrap_content"
@@ -104,7 +104,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:layout_weight="0"
-                        android:background="@color/CustomBlue" />
+                        android:background="@color/NFLBlue" />
 
                 </LinearLayout>
 
@@ -134,7 +134,7 @@
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l1"
-                android:background="@color/CustomBlue"
+                android:background="@color/NFLBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"/>
@@ -179,7 +179,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:layout_weight="0"
-                        android:background="@color/CustomBlue" />
+                        android:background="@color/NFLBlue" />
 
                 </LinearLayout>
 
@@ -207,7 +207,7 @@
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l2"
-                android:background="@color/CustomBlue"
+                android:background="@color/NFLBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp" />
@@ -252,7 +252,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:layout_weight="0"
-                        android:background="@color/CustomBlue" />
+                        android:background="@color/NFLBlue" />
 
                 </LinearLayout>
 
@@ -281,7 +281,7 @@
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l3"
-                android:background="@color/CustomBlue"
+                android:background="@color/NFLBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"/>
@@ -326,7 +326,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:layout_weight="0"
-                        android:background="@color/CustomBlue" />
+                        android:background="@color/NFLBlue" />
 
                 </LinearLayout>
 
@@ -355,7 +355,7 @@
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l4"
-                android:background="@color/CustomBlue"
+                android:background="@color/NFLBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"/>
@@ -400,7 +400,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:layout_weight="0"
-                        android:background="@color/CustomBlue" />
+                        android:background="@color/NFLBlue" />
 
                 </LinearLayout>
 
@@ -429,7 +429,7 @@
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l5"
-                android:background="@color/CustomBlue"
+                android:background="@color/NFLBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"/>
@@ -474,7 +474,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:layout_weight="0"
-                        android:background="@color/CustomBlue" />
+                        android:background="@color/NFLBlue" />
 
                 </LinearLayout>
 
@@ -503,7 +503,7 @@
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l6"
-                android:background="@color/CustomBlue"
+                android:background="@color/NFLBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"/>
@@ -548,7 +548,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:layout_weight="0"
-                        android:background="@color/CustomBlue" />
+                        android:background="@color/NFLBlue" />
 
                 </LinearLayout>
 
@@ -577,7 +577,7 @@
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l7"
-                android:background="@color/CustomBlue"
+                android:background="@color/NFLBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"/>
@@ -622,7 +622,7 @@
                         android:layout_height="fill_parent"
                         android:layout_gravity="center"
                         android:layout_weight="0"
-                        android:background="@color/CustomBlue" />
+                        android:background="@color/NFLBlue" />
 
                 </LinearLayout>
 

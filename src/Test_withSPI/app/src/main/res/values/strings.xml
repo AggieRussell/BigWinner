@@ -149,5 +149,6 @@
     <color name="DarkBlue">#00008B</color>
     <color name="Navy">#000080</color>
     <color name="Black">#000000</color>
-    <color name="CustomBlue">#092040</color>
+    <color name="NFLBlue">#013369</color>
+    <color name="NFLRed">#d50a0a</color>
 </resources>
