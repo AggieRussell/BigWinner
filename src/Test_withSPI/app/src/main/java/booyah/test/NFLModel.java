@@ -5,6 +5,7 @@ package booyah.test;
  */
 
 import java.util.ArrayList;
+import java.io.*;
 import android.app.Activity;
 import android.app.Application;
 import android.app.ListActivity;
@@ -14,6 +15,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+import android.content.res.AssetManager;
+
 
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 import static java.lang.System.out;
@@ -22,12 +25,13 @@ public class NFLModel{
 
     private String user;
     private String season;
+    private String predictor;
     private ArrayList<String> home = new ArrayList<String>();
     private ArrayList<String> away = new ArrayList<String>();
     private ArrayList<String> winners = new ArrayList<String>();
     private double numCorrect;
     private double numGames;
- //   ArrayList<ArrayList<String>> weekList = new ArrayList<ArrayList<String>>();
+    //   ArrayList<ArrayList<String>> weekList = new ArrayList<ArrayList<String>>();
 
     public NFLModel() {
         user = ".";
@@ -49,6 +53,17 @@ public class NFLModel{
     public void setSeason(String s){
         season = s;
         out.println("model season set");
+    }
+
+    public void setPredictor(String ai) {
+        if(ai.compareTo("Power Ranks") == 0) {
+            predictor = "PowerRankPredictions";
+        }
+        else if(ai.compareTo("Optimized Bayes") == 0) {
+            predictor = "PowerRankPredictions";
+        }
+        else predictor = "PowerRankPredictions";
+        out.println("model predictor set");
     }
 
     public String getUser() {
@@ -88,9 +103,7 @@ public class NFLModel{
         return home;
     }
 
-    public ArrayList<String> getAway() {
-        return away;
-    }
+    public ArrayList<String> getAway() { return away; }
 
     public ArrayList<String> getWinners(DBHelper db, int week) {
         winners.clear();
@@ -104,22 +117,57 @@ public class NFLModel{
                 winners.add((String) weekSchedule.get(2).getCol().get(i));
             else winners.add((String) weekSchedule.get(3).getCol().get(i));
         }
-  /*      if (week == 1) {
-            winners.add("Falcons");
-            winners.add("Texans");
-            winners.add("Falcons");
-            winners.add("Texans");
-            winners.add("Falcons");
-            winners.add("Texans");
-            winners.add("Falcons");
-            winners.add("Texans");
-        }
-        if (week == 2) {
-            winners.add("Falcons");
-            winners.add("Texans");
-            winners.add("Falcons");
-        }*/
         return winners;
+    }
+
+    public ArrayList<String> getPredictions(Context c, int week) {
+        String fileName = predictor + ".txt";
+        ArrayList<String> predictions = new ArrayList<>();
+
+        String line;
+        try {
+            //Utilize android asset manager to handle text file and file reader
+            AssetManager assetManager = c.getAssets();
+            InputStream inS = assetManager.open(fileName);
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inS));
+
+            int yearNum = Integer.parseInt(season);
+            boolean yearFound = false;
+            while((line = bufferedReader.readLine()) != null && !yearFound) {
+                int thisYear = Integer.parseInt(line);
+                boolean weekFound = false;
+
+                if(thisYear == yearNum) {
+                    yearFound = true;
+                    while((line = bufferedReader.readLine()) != null && !weekFound) {
+                        String tokens[] = line.split(" ");
+                        int thisWeek = Integer.parseInt(tokens[0]);
+
+                        if(thisWeek == week) {
+                            weekFound = true;
+                            for(int i=1; i<tokens.length; ++i) {
+                                predictions.add(tokens[i]);
+                            }
+                        }
+                    }
+                }
+                else {
+                    for(int i=0; i<17; ++i) {
+                        bufferedReader.readLine();
+                    }
+                }
+            }
+
+            bufferedReader.close();
+        }
+        catch(FileNotFoundException ex) {
+            out.printf("Unable to open file %s\n", fileName);
+        }
+        catch(IOException ex) {
+            out.printf("Error reading file %s\n", fileName);
+        }
+
+        return predictions;
     }
 
     public double getWklyUserAccuracy(ArrayList<String> picks) {

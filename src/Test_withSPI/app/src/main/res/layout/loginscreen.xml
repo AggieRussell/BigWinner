@@ -70,6 +70,27 @@
 
     <TableRow
         android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Predictor:"
+            android:id="@+id/predictorView"
+            android:layout_margin="15dp" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/predictorSpinner"
+            android:layout_margin="15dp"
+            android:spinnerMode="dropdown" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_span="2"
         android:gravity="center"

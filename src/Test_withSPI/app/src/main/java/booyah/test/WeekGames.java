@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.lang.String;
 
 /**
  * Created by Christine Russell on 4/17/16.
@@ -66,8 +67,9 @@ public class WeekGames extends Activity {
 
         ArrayList<String> h = p.getHome();
         ArrayList<String> a = p.getAway();
+        ArrayList<String> predictions = p.getPredictions();
 
-        setButtons(h,a);
+        setButtons(h,a, predictions);
 
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -170,18 +172,21 @@ public class WeekGames extends Activity {
         }
     }
 
-    private void setButtons(ArrayList<String> h, ArrayList<String> a) {
+    private void setButtons(ArrayList<String> h, ArrayList<String> a, ArrayList<String> predictions) {
         System.out.println(h.size());
-        System.out.println(a.size());
-        System.out.println(home.size());
-        System.out.println(away.size());
-        System.out.println(games.size());
+        System.out.println(predictions.size());
+
         for (int i = 0; i < h.size(); ++i) {
             away.get(i).setText(a.get(i));
             home.get(i).setText("@ " + h.get(i));
             games.get(i).setVisibility(View.VISIBLE);
             if (i < games.size()/2-1)
                 lines.get(i).setVisibility(View.VISIBLE);
+
+            if(predictions.contains(a.get(i))) {
+                away.get(i).setTextColor(0xFF004995);
+            }
+            else home.get(i).setTextColor(0xFF004995);
         }
     }
 

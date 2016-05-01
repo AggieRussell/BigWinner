@@ -22,21 +22,22 @@ public class NFLPresenter extends Application {
     //NFLView v;
     NFLModel m;
 
-//    private DBHelper db = new DBHelper(this);
+    //    private DBHelper db = new DBHelper(this);
     ArrayList<String> picks = new ArrayList<String>();
 
     int week;
 
     public NFLPresenter(){
-    //    v = new NFLView();
-  //      db = new DBHelper(this);
+        //    v = new NFLView();
+        //      db = new DBHelper(this);
         m = new NFLModel();
         week = 0;
     }
 
-    public void setM(String u, String s) {
+    public void setM(String u, String s, String a) {
         m.setUser(u);
         m.setSeason(s);
+        m.setPredictor(a);
         out.println("pres setM");
     }
 
@@ -92,6 +93,8 @@ public class NFLPresenter extends Application {
     public ArrayList<String> getWinners(DBHelper db) {
         return m.getWinners(db, week);
     }
+
+    public ArrayList<String> getPredictions() { return m.getPredictions(getApplicationContext(), week); }
 
     public double getWklyUserAccuracy() {
         return m.getWklyUserAccuracy(picks);

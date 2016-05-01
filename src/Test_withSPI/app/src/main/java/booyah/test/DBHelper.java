@@ -80,4 +80,95 @@ public class DBHelper extends SQLiteAssetHelper {
 
     }
 
+    public ArrayList<Column> getScores(){
+        //set up query
+        String queryString = "SELECT * FROM Scores";
+
+        //set up db to read
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor dbCursor = db.rawQuery(queryString, null);
+
+        //fill column names
+        ArrayList<Column> scores = new ArrayList<Column>();
+        String[] colNames = dbCursor.getColumnNames();
+        for(int k = 0; k < colNames.length; ++k){
+            scores.add(new Column(colNames[k]));
+
+            //Debug
+            Log.d("Check Col Names", colNames[k]);
+        }
+
+        //begin reading
+        if(dbCursor.moveToFirst()){
+            while(dbCursor.isAfterLast() == false){
+                for(int i = 0; i < dbCursor.getColumnCount(); ++i){
+                    String s = dbCursor.getString(i);   //read value
+                    scores.get(i).addValue(s);        //add to column
+                }
+                dbCursor.moveToNext();
+            }
+        }
+        else{
+            //fail condition?
+            Log.d("Failure Tag", "Fail to move cursor #2!!!");
+        }
+
+        //make years human read-able
+        int years = scores.get(0).size();
+        Log.d("Year Value", Integer.toString(years));
+        for(int j = 0; j < years; ++j){
+            scores.get(0).changeValue(j, "201" + (String)scores.get(0).getValue(j));
+            Log.d("Check Year", (String)scores.get(0).getValue(j));
+        }
+
+        dbCursor.close();
+        //Check output
+        String check = "";
+        int checkList = scores.get(0).getCol().size();
+        for(int l = 0; l < checkList; ++l){
+
+            for(int m = 0; m < scores.size(); ++m){
+                check = check + (String)scores.get(m).getValue(l) + " ";
+            }
+            check = check + "\n";
+        }
+        Log.d("Correct Array?", check);
+
+
+        return scores;
+    }
+
+    public void updateScore(int year, double score){
+        //query
+        String updateRecent = "UPDATE Scores SET Recent = ? WHERE Year = ?";
+        String updateTop = "UPDATE Scores SET Top = ? WHERE Year = ?";
+        String[] argsRecent = {Double.toString(score),  Integer.toString(year%2010)};
+        String[] argsTop = {Double.toString(score),Integer.toString(year%2010)};
+        //set up database for writing
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL(updateRecent, argsRecent);
+
+
+        //fill column names
+        ArrayList<Column> scores;
+        scores = getScores();
+        String currentTop = (String)scores.get(1).getValue((year%2010)-1);
+        if(currentTop.equals("--"))
+            db.execSQL(updateTop, argsTop);
+        else if(Double.parseDouble(currentTop) < score)
+            db.execSQL(updateTop, argsTop);
+
+
+    }
+
+    public void clearScores(){
+        //query
+        String updateRecent = "UPDATE Scores SET Recent = ?";
+        String updateTop = "UPDATE Scores SET Top = ?";
+        String[] args = {"--"};
+
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL(updateRecent, args);
+        db.execSQL(updateTop, args);
+    }
 }
