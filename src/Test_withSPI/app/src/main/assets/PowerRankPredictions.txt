@@ -1,0 +1,90 @@
+2011
+1 Cardinals Ravens Bears Browns Broncos Packers Texans Titans Bills Dolphins Jets Vikings Seahawks Rams Lions Redskins
+2 Eagles Bills Packers Broncos Lions Browns Dolphins Vikings Patriots Saints Rams Jets Steelers 49ers Titans Redskins
+3 Patriots Panthers Packers 49ers Dolphins Redskins Steelers Lions Saints Jets Eagles Chargers Seahawks Rams Buccaneers Titans
+4 Cardinals Ravens Bears Bills Titans Lions Packers Steelers Saints Vikings Patriots Eagles Dolphins Seahawks Rams Buccaneers
+5 Packers Eagles Saints Broncos Lions Texans Colts Jaguars Vikings Patriots Giants Steelers 49ers
+6 Falcons Ravens Vikings Bengals Lions Rams Patriots Giants Jets Browns Steelers Buccaneers Redskins
+7 Cardinals Redskins Seahawks Rams Lions Ravens Dolphins Vikings Saints Jets Raiders Buccaneers Titans
+8 Ravens Redskins Vikings Lions Texans Chargers Giants Eagles Steelers 49ers Seahawks Rams Titans
+9 Rams Jets Seahawks Texans Colts Dolphins Patriots Saints Broncos Eagles Steelers Chargers Titans Redskins
+10 Saints Titans Lions Steelers Rams Cowboys Vikings Colts Broncos Redskins Jets Eagles Chargers Giants Seahawks Buccaneers
+11 Titans Ravens Bears Browns Jets Lions Packers Dolphins Vikings Patriots Giants Cardinals Rams Redskins
+12 Vikings Ravens Browns Dolphins Lions Panthers Texans Steelers Giants Jets Bears Eagles Chargers Redskins Rams Titans
+13 Cardinals Titans Bears Ravens Texans Chargers Dolphins Vikings Patriots Lions Giants Steelers Rams Seahawks Buccaneers Redskins
+14 Cardinals Ravens Panthers Texans Giants Broncos Lions Packers Buccaneers Dolphins Jets Steelers Chargers Rams Titans Redskins
+15 Cardinals Falcons Dolphins Seahawks Patriots Texans Titans Packers Vikings Redskins Lions Eagles Ravens Steelers Rams Buccaneers
+16 Ravens Bills Buccaneers Cardinals Eagles Lions Packers Texans Chiefs Patriots Saints Jets Rams Seahawks Titans Redskins
+17 Cardinals Buccaneers Ravens Steelers Broncos Lions Titans Jaguars Dolphins Vikings Patriots Saints Giants Chargers Eagles Rams
+2012
+1 Seahawks Ravens Bears Eagles Steelers Lions 49ers Texans Falcons Vikings Redskins Giants Jets Raiders Panthers Titans
+2 Falcons Chiefs Panthers Bengals Packers Colts Texans Raiders Cardinals Giants Eagles Steelers Titans 49ers Seahawks Redskins
+3 Eagles Ravens Giants Bears Browns Cowboys Texans Colts Dolphins 49ers Saints Steelers Falcons Seahawks Lions Redskins
+4 Cardinals Falcons Ravens Patriots Cowboys Broncos Lions Packers Texans Bengals Chargers 49ers Eagles Seahawks Redskins
+5 Seahawks Bengals Colts Bears Ravens Vikings Broncos Saints Giants Texans Eagles 49ers Rams Redskins
+6 Cardinals Falcons Cowboys Browns Texans Rams Colts Eagles Broncos Giants Seahawks Buccaneers Steelers Redskins
+7 Titans Cowboys Lions Steelers Ravens Colts Vikings Patriots Redskins Raiders Seahawks Packers Saints
+8 49ers Bears Browns Cowboys Broncos Seahawks Packers Raiders Vikings Jets Eagles Redskins Rams Titans
+9 Cowboys Bengals Ravens Packers Texans Colts Lions Eagles Giants Raiders Chargers Seahawks Titans Redskins
+10 Ravens Panthers Bears Giants Colts Titans Vikings Patriots Saints Eagles Steelers 49ers Seahawks Buccaneers
+11 Falcons Bills Panthers Cowboys Broncos Lions Texans Bengals Colts Saints Steelers 49ers Rams Redskins
+12 Cardinals Vikings Bengals Steelers Redskins Lions Colts Titans Broncos Seahawks 49ers Giants Patriots Eagles Ravens Falcons
+13 Falcons Steelers Jaguars Seahawks Eagles Broncos Lions Packers Panthers Patriots Cardinals Browns Bengals 49ers Titans Redskins
+14 Rams Panthers Cowboys Browns Packers Colts Jaguars Vikings Texans Giants Broncos Steelers 49ers Seahawks Eagles Redskins
+15 Lions Giants Ravens Seahawks Packers Redskins Cowboys Texans Jaguars 49ers Saints Raiders Eagles Panthers Vikings Titans
+16 Cardinals Giants Panthers Cowboys Browns Lions Packers Texans Jaguars Colts Dolphins Chargers Eagles Steelers Seahawks Rams
+17 Falcons Bills Ravens Broncos Lions Colts Vikings Patriots Saints Eagles Steelers Chargers 49ers Seahawks Titans Redskins
+2013
+1 Bills Seahawks Bengals Browns Cowboys Ravens Lions Colts Chiefs Saints Jets Titans Texans 49ers Cardinals Redskins
+2 Cardinals Rams Ravens Panthers Bears Bengals Redskins Texans Dolphins Chiefs Jets Giants Raiders Eagles Seahawks Saints
+3 Ravens Panthers Bengals Rams Broncos Dolphins Browns Patriots Saints Jets Chiefs Bears 49ers Seahawks Titans Redskins
+4 Patriots Ravens Bengals Eagles Lions Seahawks Colts Chiefs Vikings Saints Redskins Cowboys 49ers Cardinals Jets
+5 Cardinals Jets Saints Bengals Browns Cowboys Lions Seahawks Dolphins Giants Raiders 49ers Rams Titans
+6 Ravens Bengals Bears Lions Redskins Broncos Texans Chiefs Panthers Saints Jets Colts 49ers Seahawks Eagles
+7 Seahawks Falcons Panthers Lions Browns Colts Jaguars Texans Dolphins Giants Jets Eagles Ravens 49ers Redskins
+8 Cardinals Bengals Redskins Lions 49ers Chiefs Vikings Dolphins Saints Steelers Eagles Seahawks Panthers
+9 Chiefs Panthers Ravens Cowboys Bears Texans Bengals Patriots Jets Eagles Seahawks Rams Redskins
+10 Cardinals Seahawks Bengals Lions Eagles Colts Redskins Saints Giants Bills Chargers 49ers Dolphins Titans
+11 Jets Panthers Ravens Bengals Chiefs Texans Cardinals Dolphins 49ers Giants Redskins Lions Seahawks Buccaneers Titans
+12 Cardinals Saints Ravens Browns Lions Packers Texans Chiefs Dolphins Patriots Giants Titans Rams 49ers
+13 Ravens Bills Panthers Browns Cowboys Lions Texans Colts Chiefs Bears Jets Cardinals Bengals 49ers Seahawks Redskins
+14 Cardinals Ravens Bears Bengals Titans Packers Texans Browns Saints Jets Lions Dolphins Giants Seahawks Bills Redskins
+15 Redskins Panthers Browns Cowboys Broncos Lions Texans Bills Dolphins Vikings Seahawks Chiefs Bengals Saints 49ers Cardinals
+16 Ravens Dolphins Panthers Bengals Lions Packers Texans Titans Chiefs Jets Bears Chargers 49ers Seahawks Rams Redskins
+17 49ers Panthers Bears Bengals Cowboys Colts Dolphins Lions Patriots Saints Redskins Raiders Browns Chiefs Seahawks Texans
+2014
+1 Cardinals Saints Ravens Bears 49ers Broncos Lions Redskins Titans Dolphins Raiders Eagles Browns Seahawks Vikings Buccaneers
+2 Ravens Dolphins Lions Bengals Saints Broncos Packers Eagles Vikings Cardinals Raiders Seahawks 49ers Rams Titans Redskins
+3 Cardinals Falcons Chargers Panthers Bengals Ravens Packers Jaguars Dolphins Patriots Vikings Giants Jets Eagles Seahawks Rams
+4 Ravens Packers Saints Texans Titans Patriots Vikings Lions Raiders Buccaneers Chargers Eagles Redskins
+5 Panthers Cowboys Broncos Lions Packers Ravens Jaguars Bengals Saints Giants Eagles Chargers 49ers Browns Seahawks
+6 Cardinals Falcons Patriots Bengals Browns Texans Packers Vikings Broncos Raiders Eagles Seahawks Rams Ravens Titans
+7 Ravens Vikings Dolphins Giants Broncos Lions Packers Bengals Jaguars Patriots Cardinals Steelers Chargers Seahawks Redskins
+8 Cardinals Lions Seahawks Ravens Browns Redskins Broncos Dolphins Rams Patriots Packers Jets Steelers Vikings Titans
+9 Panthers Bengals Browns Cardinals Eagles Jets Dolphins Vikings Broncos Giants Ravens Rams Seahawks
+10 Cardinals Ravens Bills Bengals Lions Packers Jaguars Saints Jets Broncos Eagles Seahawks Buccaneers
+11 Cardinals Panthers Vikings Browns Packers Patriots Seahawks Dolphins Saints Giants Chargers Broncos Titans Redskins
+12 Falcons Bills Buccaneers Broncos Bengals Jaguars Vikings Lions Ravens Giants Raiders Eagles Rams Redskins Seahawks
+13 Cardinals Ravens Browns Eagles Lions Packers Titans Redskins Giants Broncos Vikings Dolphins Saints Seahawks Rams Bengals
+14 Cardinals Bears Bengals Browns Broncos Lions Packers Jaguars Ravens Vikings Saints Raiders Seahawks Patriots Giants Redskins
+15 Falcons Ravens Packers Panthers Saints Bengals Vikings Colts Raiders Patriots Giants Eagles Broncos Seahawks Cardinals Titans
+16 Seahawks Panthers Lions Broncos Cowboys Ravens Jaguars Vikings Saints Patriots Raiders Steelers 49ers Rams Packers Redskins
+17 Panthers Ravens Broncos Packers Jaguars Chargers Dolphins Vikings Patriots Giants Bengals Cardinals Seahawks Buccaneers Titans Redskins
+2015
+1 Cardinals Eagles Bills Bears Giants Broncos Chiefs Panthers Patriots Jets Raiders Lions Vikings Seahawks Buccaneers Redskins
+2 Bills Panthers Bears Chargers Browns Packers Jets Jaguars Chiefs Vikings Buccaneers Giants Raiders Eagles 49ers Redskins
+3 Cardinals Bengals Panthers Raiders Falcons Lions Chiefs Texans Bills Vikings Patriots Redskins Eagles Bears Rams Titans
+4 Cardinals Texans Bills Bears Chiefs Vikings Jaguars Jets Cowboys Steelers Chargers Packers Lions Panthers Eagles
+5 Redskins Browns Bengals Cowboys Lions Packers Texans Chiefs 49ers Broncos Eagles Chargers Buccaneers Bills
+6 Bills Broncos Bears Packers Patriots Texans Chiefs Falcons Redskins Eagles Cardinals 49ers Seahawks Titans
+7 Cardinals Eagles Lions Colts Bills Chiefs Texans Jets Giants Chargers 49ers Browns Falcons Redskins
+8 Falcons Chargers Panthers Bears Browns Seahawks Packers Texans Chiefs Patriots Giants Raiders Bengals 49ers
+9 Bills Packers Bengals Eagles Broncos Vikings Redskins Titans Jets Raiders Bears 49ers Giants
+10 Ravens Bengals Chiefs Packers Giants Bills Vikings Eagles Browns Seahawks Bears Buccaneers Panthers Redskins
+11 Bengals Falcons Ravens Redskins Bears Lions Texans Jaguars Dolphins Vikings Bills Eagles Chiefs Seahawks
+12 Vikings Bengals Browns Panthers Broncos Lions Bears Texans Buccaneers Chargers Chiefs Jets 49ers Seahawks Raiders Redskins
+13 Bills Bears Bengals Lions Dolphins Vikings Eagles Panthers Giants Chiefs Steelers Chargers Cardinals Buccaneers Titans Redskins
+14 Vikings Seahawks Panthers Bears Bengals Browns Broncos Packers Texans Jaguars Chiefs Giants Jets Eagles Lions Buccaneers
+15 Chiefs Jets Texans Falcons Bears Patriots Lions Panthers Packers Eagles Broncos Chargers 49ers Seahawks Rams Redskins
+16 Packers Panthers Ravens Bills Broncos Lions Chiefs Dolphins Vikings Jaguars Jets Chargers Eagles Seahawks Bears Texans
+17 Seahawks Falcons Bills Panthers Bears Bengals Browns Redskins Broncos Packers Texans Titans Chiefs Dolphins Eagles 49ers

@@ -9,6 +9,11 @@
         <item>2012</item>
         <item>2011</item>
     </string-array>
+    <string-array name="predictor_array">
+        <item>Power Ranks</item>
+        <item>Optimized Bayes</item>
+        <item>Pi-Rating</item>
+    </string-array>
     <color name="White">#FFFFFF</color>
     <color name="Ivory">#FFFFF0</color>
     <color name="LightYellow">#FFFFE0</color>
