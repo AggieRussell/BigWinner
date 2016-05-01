@@ -196,27 +196,211 @@ public class WeekGames extends Activity {
 
             //test radio button images
             switch (a.get(i)) {
+                case "Cardinals" :
+                    away.get(i).setButtonDrawable(R.drawable.cardinals_selector);
+                    break;
                 case "Falcons" :
                     away.get(i).setButtonDrawable(R.drawable.falcons_selector);
+                    break;
+                case "Ravens" :
+                    away.get(i).setButtonDrawable(R.drawable.ravens_selector);
+                    break;
+                case "Bills" :
+                    away.get(i).setButtonDrawable(R.drawable.bills_selector);
+                    break;
+                case "Panthers" :
+                    away.get(i).setButtonDrawable(R.drawable.panthers_selector);
+                    break;
+                case "Bears" :
+                    away.get(i).setButtonDrawable(R.drawable.bears_selector);
+                    break;
+                case "Bengals" :
+                    away.get(i).setButtonDrawable(R.drawable.bengals_selector);
+                    break;
+                case "Browns" :
+                    away.get(i).setButtonDrawable(R.drawable.browns_selector);
+                    break;
+                case "Cowboys" :
+                    away.get(i).setButtonDrawable(R.drawable.cowboys_selector);
+                    break;
+                case "Broncos" :
+                    away.get(i).setButtonDrawable(R.drawable.broncos_selector);
+                    break;
+                case "Lions" :
+                    away.get(i).setButtonDrawable(R.drawable.lions_selector);
+                    break;
+                case "Packers" :
+                    away.get(i).setButtonDrawable(R.drawable.packers_selector);
+                    break;
+                case "Texans" :
+                    away.get(i).setButtonDrawable(R.drawable.texans_selector);
+                    break;
+                case "Colts" :
+                    away.get(i).setButtonDrawable(R.drawable.colts_selector);
+                    break;
+                case "Jaguars" :
+                    away.get(i).setButtonDrawable(R.drawable.jaguars_selector);
+                    break;
+                case "Chiefs" :
+                    away.get(i).setButtonDrawable(R.drawable.chiefs_selector);
+                    break;
+                case "Dolphins" :
+                    away.get(i).setButtonDrawable(R.drawable.dolphins_selector);
+                    break;
+                case "Vikings" :
+                    away.get(i).setButtonDrawable(R.drawable.vikings_selector);
+                    break;
+                case "Patriots" :
+                    away.get(i).setButtonDrawable(R.drawable.patriots_selector);
+                    break;
+                case "Saints" :
+                    away.get(i).setButtonDrawable(R.drawable.saints_selector);
+                    break;
+                case "Giants" :
+                    away.get(i).setButtonDrawable(R.drawable.giants_selector);
+                    break;
+                case "Jets" :
+                    away.get(i).setButtonDrawable(R.drawable.jets_selector);
+                    break;
+                case "Raiders" :
+                    away.get(i).setButtonDrawable(R.drawable.raiders_selector);
                     break;
                 case "Eagles" :
                     away.get(i).setButtonDrawable(R.drawable.eagles_selector);
                     break;
+<<<<<<< HEAD
                 case "Cardinals" :
                     away.get(i).setButtonDrawable(R.drawable.cardinals_selector);
+=======
+                case "Steelers" :
+                    away.get(i).setButtonDrawable(R.drawable.steelers_selector);
+                    break;
+                case "Chargers" :
+                    away.get(i).setButtonDrawable(R.drawable.chargers_selector);
+                    break;
+                case "49ers" :
+                    away.get(i).setButtonDrawable(R.drawable.fortyniners_selector);
+                    break;
+                case "Seahawks" :
+                    away.get(i).setButtonDrawable(R.drawable.seahawks_selector);
+                    break;
+                case "Rams" :
+                    away.get(i).setButtonDrawable(R.drawable.rams_selector);
+                    break;
+                case "Buccaneers" :
+                    away.get(i).setButtonDrawable(R.drawable.buccaneers_selector);
+                    break;
+                case "Titans" :
+                    away.get(i).setButtonDrawable(R.drawable.titans_selector);
+                    break;
+                case "Redskins" :
+                    away.get(i).setButtonDrawable(R.drawable.redskins_selector);
+>>>>>>> 3334e1f253b14977d93338c0fe4d180797d84641
                     break;
                 default :
                     break;
             }
             switch (h.get(i)) {
+                case "Cardinals" :
+                    home.get(i).setButtonDrawable(R.drawable.cardinals_selector);
+                    break;
                 case "Falcons" :
                     home.get(i).setButtonDrawable(R.drawable.falcons_selector);
+                    break;
+                case "Ravens" :
+                    home.get(i).setButtonDrawable(R.drawable.ravens_selector);
+                    break;
+                case "Bills" :
+                    home.get(i).setButtonDrawable(R.drawable.bills_selector);
+                    break;
+                case "Panthers" :
+                    home.get(i).setButtonDrawable(R.drawable.panthers_selector);
+                    break;
+                case "Bears" :
+                    home.get(i).setButtonDrawable(R.drawable.bears_selector);
+                    break;
+                case "Bengals" :
+                    home.get(i).setButtonDrawable(R.drawable.bengals_selector);
+                    break;
+                case "Browns" :
+                    home.get(i).setButtonDrawable(R.drawable.browns_selector);
+                    break;
+                case "Cowboys" :
+                    home.get(i).setButtonDrawable(R.drawable.cowboys_selector);
+                    break;
+                case "Broncos" :
+                    home.get(i).setButtonDrawable(R.drawable.broncos_selector);
+                    break;
+                case "Lions" :
+                    home.get(i).setButtonDrawable(R.drawable.lions_selector);
+                    break;
+                case "Packers" :
+                    home.get(i).setButtonDrawable(R.drawable.packers_selector);
+                    break;
+                case "Texans" :
+                    home.get(i).setButtonDrawable(R.drawable.texans_selector);
+                    break;
+                case "Colts" :
+                    home.get(i).setButtonDrawable(R.drawable.colts_selector);
+                    break;
+                case "Jaguars" :
+                    home.get(i).setButtonDrawable(R.drawable.jaguars_selector);
+                    break;
+                case "Chiefs" :
+                    home.get(i).setButtonDrawable(R.drawable.chiefs_selector);
+                    break;
+                case "Dolphins" :
+                    home.get(i).setButtonDrawable(R.drawable.dolphins_selector);
+                    break;
+                case "Vikings" :
+                    home.get(i).setButtonDrawable(R.drawable.vikings_selector);
+                    break;
+                case "Patriots" :
+                    home.get(i).setButtonDrawable(R.drawable.patriots_selector);
+                    break;
+                case "Saints" :
+                    home.get(i).setButtonDrawable(R.drawable.saints_selector);
+                    break;
+                case "Giants" :
+                    home.get(i).setButtonDrawable(R.drawable.giants_selector);
+                    break;
+                case "Jets" :
+                    home.get(i).setButtonDrawable(R.drawable.jets_selector);
+                    break;
+                case "Raiders" :
+                    home.get(i).setButtonDrawable(R.drawable.raiders_selector);
                     break;
                 case "Eagles" :
                     home.get(i).setButtonDrawable(R.drawable.eagles_selector);
                     break;
+<<<<<<< HEAD
                 case "Cardinals" :
                     home.get(i).setButtonDrawable(R.drawable.cardinals_selector);
+=======
+                case "Steelers" :
+                    home.get(i).setButtonDrawable(R.drawable.steelers_selector);
+                    break;
+                case "Chargers" :
+                    home.get(i).setButtonDrawable(R.drawable.chargers_selector);
+                    break;
+                case "49ers" :
+                    home.get(i).setButtonDrawable(R.drawable.fortyniners_selector);
+                    break;
+                case "Seahawks" :
+                    home.get(i).setButtonDrawable(R.drawable.seahawks_selector);
+                    break;
+                case "Rams" :
+                    home.get(i).setButtonDrawable(R.drawable.rams_selector);
+                    break;
+                case "Buccaneers" :
+                    home.get(i).setButtonDrawable(R.drawable.buccaneers_selector);
+                    break;
+                case "Titans" :
+                    home.get(i).setButtonDrawable(R.drawable.titans_selector);
+                    break;
+                case "Redskins" :
+                    home.get(i).setButtonDrawable(R.drawable.redskins_selector);
+>>>>>>> 3334e1f253b14977d93338c0fe4d180797d84641
                     break;
                 default :
                     break;
