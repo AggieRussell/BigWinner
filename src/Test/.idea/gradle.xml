@@ -8,11 +8,19 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+=======
+            <option value="$PROJECT_DIR$/app" />
+>>>>>>> ea6b4ffe21b24fe2c1c9a7b396a1767c306ea773
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+=======
+            <option value="$PROJECT_DIR$/app" />
+>>>>>>> ea6b4ffe21b24fe2c1c9a7b396a1767c306ea773
           </set>
         </option>
       </GradleProjectSettings>
