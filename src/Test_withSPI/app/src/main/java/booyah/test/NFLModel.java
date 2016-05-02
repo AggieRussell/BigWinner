@@ -115,13 +115,13 @@ public class NFLModel{
         predictions.clear();
 
         //Get the various results of the predictors and return those predictions that occur most often
-        ArrayList<String> powerRanks = getPredictionsFor("PowerRankPredictions", c, week);
+//        ArrayList<String> powerRanks = getPredictionsFor("PowerRankPredictions", c, week);
         ArrayList<String> bayes = getPredictionsFor("BayesPredictions", c, week);
-        ArrayList<String> piRating = getPredictionsFor("PiRatingPredictions", c, week);
+//        ArrayList<String> piRating = getPredictionsFor("PiRatingPredictions", c, week);
 
-        boolean prOptimum;
-        for(int i=0; i<powerRanks.size(); ++i) {
-            prOptimum = false;
+//        boolean prOptimum;
+        for(int i=0; i<bayes.size(); ++i) {
+        /*    prOptimum = false;
             if(powerRanks.get(i).compareTo(bayes.get(i)) == 0)
                 prOptimum = true;
             if(powerRanks.get(i).compareTo(piRating.get(i)) == 0)
@@ -129,11 +129,9 @@ public class NFLModel{
 
             if(prOptimum == true)
                 predictions.add(powerRanks.get(i));
-            else predictions.add(bayes.get(i));
+            else predictions.add(bayes.get(i));*/
+            predictions.add(bayes.get(i));
         }
-
-        out.println("Predictions: ");
-        out.println(predictions);
 
         return predictions;
     }
