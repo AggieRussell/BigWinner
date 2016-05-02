@@ -28,12 +28,12 @@ public class WeekGames extends Activity {
     private DBHelper db;
     final ArrayList<RadioButton> home = new ArrayList<RadioButton>();
     final ArrayList<RadioButton> away = new ArrayList<RadioButton>();
-    final ArrayList<RadioButton> allRB = new ArrayList<>();
     final ArrayList<RadioGroup> games = new ArrayList<RadioGroup>();
     final ArrayList<View> lines = new ArrayList<View>();
     final ArrayList<TextView> stats = new ArrayList<>();
     final ArrayList<View.OnClickListener> listeners = new ArrayList<>();
-    TextView open = null;
+    TextView openLeft = null;
+    TextView openRight = null;
     MediaPlayer intenseSound;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -186,34 +186,29 @@ public class WeekGames extends Activity {
         lines.add((View) findViewById(R.id.l5));
         lines.add((View) findViewById(R.id.l6));
         lines.add((View) findViewById(R.id.l7));
-        lines.add((View) findViewById(R.id.l8));
-        lines.add((View) findViewById(R.id.l9));
-        lines.add((View) findViewById(R.id.l10));
-        lines.add((View) findViewById(R.id.l11));
-        lines.add((View) findViewById(R.id.l12));
-        lines.add((View) findViewById(R.id.l13));
-        lines.add((View) findViewById(R.id.l14));
-        lines.add((View) findViewById(R.id.l15));
-        lines.add((View) findViewById(R.id.l16));
         for(int i = 0; i < games.size(); ++i) {
             games.get(i).setVisibility(View.GONE);
-        }
-        for(int i = 0; i < away.size(); ++i) {
-            allRB.add(away.get(i));
-            allRB.add(home.get(i));
-        }
-        for(int i = 0; i < allRB.size(); ++i) {
             listeners.add(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(open != null && open != stats.get(allRB.indexOf(v)/2)) {
-                        open.setVisibility(View.GONE);
+                    if(openLeft != null) {
+                        openLeft.setVisibility(View.GONE);
+                        openRight.setVisibility(View.GONE);
                     }
-                    open = stats.get(allRB.indexOf(v)/2);
-                    open.setVisibility(View.VISIBLE);
+                    int textIndex = games.indexOf(v);
+                    if(textIndex%2 == 0) {
+                        openLeft = stats.get(textIndex);
+                        openRight = stats.get(textIndex+1);
+                    }
+                    else {
+                        openLeft = stats.get(textIndex-1);
+                        openRight = stats.get(textIndex);
+                    }
+                    openLeft.setVisibility(View.VISIBLE);
+                    openRight.setVisibility(View.VISIBLE);
                 }
             });
-            allRB.get(i).setOnClickListener(listeners.get(i));
+            games.get(i).setOnClickListener(listeners.get(i));
         }
         for(int i = 0; i < lines.size(); ++i) {
             lines.get(i).setVisibility(View.GONE);
@@ -230,17 +225,17 @@ public class WeekGames extends Activity {
 
         for (int i = 0; i < h.size(); ++i) {
             away.get(i).setText(a.get(i));
-            home.get(i).setText(h.get(i));
+            home.get(i).setText("@ " + h.get(i));
             games.get(i).setVisibility(View.VISIBLE);
-            if (i < games.size())
+            if (i < games.size()/2-1)
                 lines.get(i).setVisibility(View.VISIBLE);
 
             if(predictions.contains(a.get(i))) {
-                away.get(i).setTextColor(0xFF1b831b);
+                away.get(i).setTextColor(0xFF004995);
                 away.get(i).setTypeface(null, Typeface.BOLD_ITALIC);
             }
             else {
-                home.get(i).setTextColor(0xFF1b831b);
+                home.get(i).setTextColor(0xFF004995);
                 home.get(i).setTypeface(null, Typeface.BOLD_ITALIC);
             }
 
