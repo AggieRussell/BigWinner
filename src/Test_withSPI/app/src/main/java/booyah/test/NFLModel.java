@@ -4,6 +4,7 @@ package booyah.test;
  * Created by Christine Russell on 4/16/16.
  */
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.io.*;
 import android.app.Activity;
@@ -25,11 +26,12 @@ public class NFLModel{
 
     private String user;
     private String season;
-    private String predictor;
     private ArrayList<String> home = new ArrayList<String>();
     private ArrayList<String> away = new ArrayList<String>();
     private ArrayList<String> winners = new ArrayList<String>();
+    private ArrayList<String> predictions = new ArrayList<>();
     private double numCorrect;
+    private double numCorrectPredicted;
     private double numGames;
     //   ArrayList<ArrayList<String>> weekList = new ArrayList<ArrayList<String>>();
 
@@ -53,17 +55,6 @@ public class NFLModel{
     public void setSeason(String s){
         season = s;
         out.println("model season set");
-    }
-
-    public void setPredictor(String ai) {
-        if(ai.compareTo("Power Ranks") == 0) {
-            predictor = "PowerRankPredictions";
-        }
-        else if(ai.compareTo("Optimized Bayes") == 0) {
-            predictor = "PowerRankPredictions";
-        }
-        else predictor = "PowerRankPredictions";
-        out.println("model predictor set");
     }
 
     public String getUser() {
@@ -121,8 +112,32 @@ public class NFLModel{
     }
 
     public ArrayList<String> getPredictions(Context c, int week) {
+        predictions.clear();
+
+        //Get the various results of the predictors and return those predictions that occur most often
+        ArrayList<String> powerRanks = getPredictionsFor("PowerRankPredictions", c, week);
+        ArrayList<String> bayes = getPredictionsFor("BayesPredictions", c, week);
+        ArrayList<String> piRating = getPredictionsFor("PiRatingPredictions", c, week);
+
+        boolean prOptimum;
+        for(int i=0; i<powerRanks.size(); ++i) {
+            prOptimum = false;
+            if(powerRanks.get(i).compareTo(bayes.get(i)) == 0)
+                prOptimum = true;
+            if(powerRanks.get(i).compareTo(piRating.get(i)) == 0)
+                prOptimum = true;
+
+            if(prOptimum == true)
+                predictions.add(powerRanks.get(i));
+            else predictions.add(bayes.get(i));
+        }
+
+        return predictions;
+    }
+
+    public ArrayList<String> getPredictionsFor(String predictor, Context c, int week) {
         String fileName = predictor + ".txt";
-        ArrayList<String> predictions = new ArrayList<>();
+        ArrayList<String> thesePredictions = new ArrayList<>();
 
         String line;
         try {
@@ -146,7 +161,7 @@ public class NFLModel{
                         if(thisWeek == week) {
                             weekFound = true;
                             for(int i=1; i<tokens.length; ++i) {
-                                predictions.add(tokens[i]);
+                                thesePredictions.add(tokens[i]);
                             }
                         }
                     }
@@ -167,15 +182,13 @@ public class NFLModel{
             out.printf("Error reading file %s\n", fileName);
         }
 
-        return predictions;
+        return thesePredictions;
     }
 
     public double getWklyUserAccuracy(ArrayList<String> picks) {
         double wklyNumCorrect = 0;
         double wklyNumGames = 0;
         for (int i = 0; i < winners.size(); ++i) {
-            out.println(winners.get(i));
-            out.println(picks.get(i));
             if (winners.get(i).equals(picks.get(i)))
                 wklyNumCorrect++;
             wklyNumGames++;
@@ -189,8 +202,28 @@ public class NFLModel{
 
     }
 
+    public double getWklyPredictorAccuracy() {
+        double wklyNumCorrect = 0;
+        double wklyNumGames = 0;
+        for (int i = 0; i < winners.size(); ++i) {
+            if (predictions.contains(winners.get(i)))
+                wklyNumCorrect++;
+            wklyNumGames++;
+        }
+        out.println("Weekly Number Correct: " + wklyNumCorrect);
+        double x = wklyNumCorrect/wklyNumGames;
+        out.println("Weekly Predictor Accuracy: " + x);
+        numCorrectPredicted += wklyNumCorrect;
+        return 100*x;
+
+    }
+
     public double getSeasonUserAccuracy() {
         return (100*numCorrect/numGames);
+    }
+
+    public double getSeasonPredictorAccuracy() {
+        return (100*numCorrectPredicted/numGames);
     }
 
 }

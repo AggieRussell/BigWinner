@@ -34,10 +34,9 @@ public class NFLPresenter extends Application {
         week = 0;
     }
 
-    public void setM(String u, String s, String a) {
+    public void setM(String u, String s) {
         m.setUser(u);
         m.setSeason(s);
-        m.setPredictor(a);
         out.println("pres setM");
     }
 
@@ -101,4 +100,10 @@ public class NFLPresenter extends Application {
     }
 
     public double getSeasonUserAccuracy() { return m.getSeasonUserAccuracy(); }
+
+    public double getWklyPredictorAccuracy() {
+        return m.getWklyPredictorAccuracy();
+    }
+
+    public double getSeasonPredictorAccuracy() { return m.getSeasonPredictorAccuracy(); }
 }

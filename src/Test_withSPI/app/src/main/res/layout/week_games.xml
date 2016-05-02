@@ -141,6 +141,39 @@
 
             </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list1"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list2"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
+
             <View android:layout_width="match_parent"
                 android:id="@+id/l1"
                 android:background="@color/NFLBlue"
@@ -220,6 +253,39 @@
                         android:paddingStart="5dp"
                         android:paddingLeft="5dp"/>
                 </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats2">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list3"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list4"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
             </TableRow>
 
             <View android:layout_width="match_parent"
@@ -304,6 +370,39 @@
 
             </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats3">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list5"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list6"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
+
             <View android:layout_width="match_parent"
                 android:id="@+id/l3"
                 android:background="@color/NFLBlue"
@@ -383,6 +482,39 @@
                         android:paddingStart="5dp"
                         android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list7"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list8"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
@@ -471,6 +603,39 @@
 
             </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats5">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list9"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list10"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
+
             <View android:layout_width="match_parent"
                 android:id="@+id/l5"
                 android:background="@color/NFLBlue"
@@ -550,6 +715,39 @@
                         android:paddingStart="5dp"
                         android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats6">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list11"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list12"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
@@ -635,6 +833,39 @@
 
             </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats7">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list13"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list14"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
+
             <View android:layout_width="match_parent"
                 android:id="@+id/l7"
                 android:background="@color/NFLBlue"
@@ -714,6 +945,39 @@
                         android:paddingStart="5dp"
                         android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats8">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list15"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list16"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
