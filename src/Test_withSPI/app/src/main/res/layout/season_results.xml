@@ -73,8 +73,9 @@
         android:gravity="center">
 
         <TextView
+            android:layout_span="2"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Big Winner Accuracy: some %"
+            android:text="Big Winner Accuracy: "
             android:id="@+id/predictorAcc"
             android:layout_gravity="center"
             android:padding="20dp"
