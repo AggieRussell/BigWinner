@@ -20,6 +20,7 @@
             android:text="greeting"
             android:textColor="@color/WhiteSmoke"
             android:id="@+id/greetingView"
+            android:gravity="left"
             android:padding="10dp" />
 
         <TextView
@@ -73,7 +74,7 @@
 
         <TextView
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Predictor Accuracy"
+            android:text="Big Winner Accuracy: some %"
             android:id="@+id/predictorAcc"
             android:layout_gravity="center"
             android:padding="20dp"

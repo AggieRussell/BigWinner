@@ -33,7 +33,8 @@ public class WeekGames extends Activity {
     final ArrayList<View> lines = new ArrayList<View>();
     final ArrayList<TextView> stats = new ArrayList<>();
     final ArrayList<View.OnClickListener> listeners = new ArrayList<>();
-    TextView open = null;
+    TextView openLeft = null;
+    TextView openRight = null;
     MediaPlayer intenseSound;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +76,8 @@ public class WeekGames extends Activity {
         ArrayList<String> a = p.getAway();
         ArrayList<String> predictions = p.getPredictions();
 
-        setButtons(h,a, predictions);
+        setButtons(h, a, predictions);
+        setStatistics(h, a, p, db);
 
         submit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -179,6 +181,22 @@ public class WeekGames extends Activity {
         stats.add((TextView) findViewById(R.id.list14));
         stats.add((TextView) findViewById(R.id.list15));
         stats.add((TextView) findViewById(R.id.list16));
+        stats.add((TextView) findViewById(R.id.list17));
+        stats.add((TextView) findViewById(R.id.list18));
+        stats.add((TextView) findViewById(R.id.list19));
+        stats.add((TextView) findViewById(R.id.list20));
+        stats.add((TextView) findViewById(R.id.list21));
+        stats.add((TextView) findViewById(R.id.list22));
+        stats.add((TextView) findViewById(R.id.list23));
+        stats.add((TextView) findViewById(R.id.list24));
+        stats.add((TextView) findViewById(R.id.list25));
+        stats.add((TextView) findViewById(R.id.list26));
+        stats.add((TextView) findViewById(R.id.list27));
+        stats.add((TextView) findViewById(R.id.list28));
+        stats.add((TextView) findViewById(R.id.list29));
+        stats.add((TextView) findViewById(R.id.list30));
+        stats.add((TextView) findViewById(R.id.list31));
+        stats.add((TextView) findViewById(R.id.list32));
         lines.add((View) findViewById(R.id.l1));
         lines.add((View) findViewById(R.id.l2));
         lines.add((View) findViewById(R.id.l3));
@@ -206,11 +224,21 @@ public class WeekGames extends Activity {
             listeners.add(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(open != null && open != stats.get(allRB.indexOf(v)/2)) {
-                        open.setVisibility(View.GONE);
+                    if(openLeft != null && openLeft != stats.get(allRB.indexOf(v)) && openLeft != stats.get(allRB.indexOf(v))) {
+                        openLeft.setVisibility(View.GONE);
+                        openRight.setVisibility(View.GONE);
                     }
-                    open = stats.get(allRB.indexOf(v)/2);
-                    open.setVisibility(View.VISIBLE);
+                    int textIndex = allRB.indexOf(v);
+                    if(textIndex % 2 == 0) {
+                        openLeft = stats.get(textIndex);
+                        openRight = stats.get(textIndex+1);
+                    }
+                    else {
+                        openLeft = stats.get(textIndex-1);
+                        openRight = stats.get(textIndex);
+                    }
+                    openLeft.setVisibility(View.VISIBLE);
+                    openRight.setVisibility(View.VISIBLE);
                 }
             });
             allRB.get(i).setOnClickListener(listeners.get(i));
@@ -444,6 +472,16 @@ public class WeekGames extends Activity {
                     break;
                 default :
                     break;
+            }
+        }
+    }
+
+    private void setStatistics(ArrayList<String> h, ArrayList<String> a, NFLPresenter p, DBHelper db) {
+        for(int i = 0; i < games.size(); ++i) {
+            //If the radio group is being used this week
+            if(games.get(i).getVisibility() == View.VISIBLE) {
+                stats.get(i*2).setText(p.getStatistics(db, a.get(i)));
+                stats.get(i*2+1).setText(p.getStatistics(db, h.get(i)));
             }
         }
     }
