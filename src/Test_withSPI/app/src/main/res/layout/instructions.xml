@@ -40,8 +40,7 @@
                 android:text="@string/dir1"
                 android:id="@+id/dir1View"
                 android:layout_marginRight="25dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginLeft="25dp"/>
         </TableRow>
 
         <TableRow
@@ -54,8 +53,11 @@
                 android:maxWidth="150dp"
                 android:adjustViewBounds="true"
                 android:id="@+id/imageView"
-                android:src="@drawable/instructions"
-                android:layout_margin="15dp"
+                android:src="@drawable/instructions2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:scaleType="fitCenter"/>
         </TableRow>
 
@@ -71,8 +73,40 @@
                 android:text="@string/dir2"
                 android:id="@+id/dir2View"
                 android:layout_marginRight="25dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginLeft="25dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="150dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageView2"
+                android:src="@drawable/instructions3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/Black"
+                android:text="@string/dir3"
+                android:id="@+id/dir3View"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"/>
         </TableRow>
 
         <TableRow

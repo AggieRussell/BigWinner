@@ -2,10 +2,13 @@ package booyah.test;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
@@ -20,6 +23,7 @@ public class WeekResults extends Activity {
     MediaPlayer whistleSound;
     final ArrayList<TextView> games = new ArrayList<TextView>();
     final ArrayList<TextView> winners = new ArrayList<TextView>();
+    final ArrayList<ImageView> logos = new ArrayList<ImageView>();
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +61,7 @@ public class WeekResults extends Activity {
         userAcc.setText("Your accuracy: " + uA);
 
         String pA = String.format("%.2f",p.getWklyPredictorAccuracy()) + "%";
-        predictorAcc.setText("Predictor: " + pA);
+        predictorAcc.setText("Big Winner accuracy: " + pA);
 
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -72,10 +76,8 @@ public class WeekResults extends Activity {
                     startActivity(i);
                     finish();
                 }
-
             }
         });
-
     }
 
     private void resetResults() {
@@ -113,9 +115,26 @@ public class WeekResults extends Activity {
         winners.add((TextView) findViewById(R.id.winner14));
         winners.add((TextView) findViewById(R.id.winner15));
         winners.add((TextView) findViewById(R.id.winner16));
+        logos.add((ImageView) findViewById(R.id.logo1));
+        logos.add((ImageView) findViewById(R.id.logo2));
+        logos.add((ImageView) findViewById(R.id.logo3));
+        logos.add((ImageView) findViewById(R.id.logo4));
+        logos.add((ImageView) findViewById(R.id.logo5));
+        logos.add((ImageView) findViewById(R.id.logo6));
+        logos.add((ImageView) findViewById(R.id.logo7));
+        logos.add((ImageView) findViewById(R.id.logo8));
+        logos.add((ImageView) findViewById(R.id.logo9));
+        logos.add((ImageView) findViewById(R.id.logo10));
+        logos.add((ImageView) findViewById(R.id.logo11));
+        logos.add((ImageView) findViewById(R.id.logo12));
+        logos.add((ImageView) findViewById(R.id.logo13));
+        logos.add((ImageView) findViewById(R.id.logo14));
+        logos.add((ImageView) findViewById(R.id.logo15));
+        logos.add((ImageView) findViewById(R.id.logo16));
         for (int i = 0; i<games.size(); ++i) {
             games.get(i).setVisibility(View.GONE);
             winners.get(i).setVisibility(View.GONE);
+            logos.get(i).setVisibility(View.INVISIBLE);
         }
     }
 
@@ -123,14 +142,21 @@ public class WeekResults extends Activity {
         ArrayList<String> w = p.getWinners(db);
         ArrayList<String> h = p.getHome();
         ArrayList<String> a = p.getAway();
+        ArrayList<String> predictions = p.getPredictions();
         ArrayList<String> picks = p.getPicks();
+        System.out.println("Winners: ");
+        System.out.println(w);
         for (int i = 0; i < w.size(); ++i) {
             games.get(i).setText(a.get(i) + " @ " + h.get(i));
             winners.get(i).setText(w.get(i));
-            if (w.get(i).equals(picks.get(i)))
+            if (predictions.contains(w.get(i)))
+                logos.get(i).setVisibility(View.VISIBLE);
+            if (w.get(i).equals(picks.get(i))) {
                 winners.get(i).setTextColor(0xFF2E8B57);
-            else
+            }
+            else {
                 winners.get(i).setTextColor(0xFFFF0000);
+            }
             games.get(i).setVisibility(View.VISIBLE);
             winners.get(i).setVisibility(View.VISIBLE);
         }

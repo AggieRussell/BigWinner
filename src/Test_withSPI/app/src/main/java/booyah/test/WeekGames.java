@@ -231,11 +231,11 @@ public class WeekGames extends Activity {
                 lines.get(i).setVisibility(View.VISIBLE);
 
             if(predictions.contains(a.get(i))) {
-                away.get(i).setTextColor(0xFF004995);
+                away.get(i).setTextColor(0xFF1b831b);
                 away.get(i).setTypeface(null, Typeface.BOLD_ITALIC);
             }
             else {
-                home.get(i).setTextColor(0xFF004995);
+                home.get(i).setTextColor(0xFF1b831b);
                 home.get(i).setTypeface(null, Typeface.BOLD_ITALIC);
             }
 

@@ -132,6 +132,9 @@ public class NFLModel{
             else predictions.add(bayes.get(i));
         }
 
+        out.println("Predictions: ");
+        out.println(predictions);
+
         return predictions;
     }
 

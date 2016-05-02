@@ -61,7 +61,7 @@ public class SeasonResults extends Activity {
         userAcc.setText("Your accuracy: " + uA);
 
         String pA = String.format("%.2f",p.getSeasonPredictorAccuracy()) + "%";
-        predictorAcc.setText("Predictor accuracy: " + pA);
+        predictorAcc.setText("Big Winner accuracy: " + pA);
 
         again.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
