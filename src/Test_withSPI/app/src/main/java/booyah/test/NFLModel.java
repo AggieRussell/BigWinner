@@ -188,6 +188,25 @@ public class NFLModel{
         return thesePredictions;
     }
 
+    public String getStatistics(DBHelper db, String team, int week) {
+        String stats = "";
+        int yearNum = Integer.parseInt(season);
+        ArrayList<Column> weekSchedule = db.getGames(yearNum, week);
+
+        for(int i=0; i<weekSchedule.get(0).size(); ++i) {
+            String homeTeam = (String)weekSchedule.get(2).getCol().get(i);
+            String awayTeam = (String)weekSchedule.get(3).getCol().get(i);
+            if(team.compareTo(homeTeam) == 0) {
+                stats = "PYA: " + weekSchedule.get(6).getCol().get(i) + "\nDPYA: " +  weekSchedule.get(7).getCol().get(i);
+            }
+            else if(team.compareTo(awayTeam) == 0) {
+                stats = "PYA: " + weekSchedule.get(8).getCol().get(i) + "\nDPYA: " +  weekSchedule.get(9).getCol().get(i);
+            }
+        }
+
+        return stats;
+    }
+
     public double getWklyUserAccuracy(ArrayList<String> picks) {
         double wklyNumCorrect = 0;
         double wklyNumGames = 0;

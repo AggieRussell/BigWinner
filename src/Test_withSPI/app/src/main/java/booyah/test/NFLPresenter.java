@@ -95,6 +95,8 @@ public class NFLPresenter extends Application {
 
     public ArrayList<String> getPredictions() { return m.getPredictions(getApplicationContext(), week); }
 
+    public String getStatistics(DBHelper db, String team) { return m.getStatistics(db, team, week); }
+
     public double getWklyUserAccuracy() {
         return m.getWklyUserAccuracy(picks);
     }

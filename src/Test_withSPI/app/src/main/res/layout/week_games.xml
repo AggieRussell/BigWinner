@@ -53,14 +53,16 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/NFLLightBlue">
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/NFLBlue"
             android:text="AWAY"
-            android:textColor="@color/Black"
             android:gravity="center"
             android:id="@+id/awayTeam"
             android:padding="10dp" />
@@ -69,11 +71,13 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
             android:id="@+id/homeTeam"
-            android:textColor="@color/Black"
             android:padding="10dp"
             android:gravity="center"
+            android:textColor="@color/NFLBlue"
             android:text="HOME" />
+
     </TableRow>
 
     <ScrollView>
@@ -137,16 +141,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats1"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list1"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list2"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l1"
@@ -206,16 +233,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats2"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list3"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list4"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l2"
@@ -275,16 +325,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list3"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats3"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list5"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list6"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l3"
@@ -345,16 +418,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list4"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats4"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list7"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list8"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l4"
@@ -415,16 +511,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list5"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats5"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list9"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list10"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l5"
@@ -485,16 +604,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list6"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats6"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list11"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list12"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l6"
@@ -555,16 +697,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list7"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats7"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list13"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list14"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l7"
@@ -625,16 +790,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list8"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats8"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list15"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list16"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l8"
@@ -695,16 +883,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list9"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats9"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list17"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list18"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l9"
@@ -765,16 +976,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list10"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats10"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list19"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list20"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l10"
@@ -835,16 +1069,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list11"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats11"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list21"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list22"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l11"
@@ -905,16 +1162,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list12"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats12"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list23"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list24"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l12"
@@ -975,16 +1255,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list13"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats13"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list25"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list26"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l13"
@@ -1045,16 +1348,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list14"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats14"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list27"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list28"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l14"
@@ -1115,16 +1441,39 @@
 
             </LinearLayout>
 
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list15"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats15"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list29"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list30"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
 
             <View android:layout_width="match_parent"
                 android:id="@+id/l15"
@@ -1185,23 +1534,46 @@
 
             </LinearLayout>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats16"
+                android:background="#f4f4f4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list31"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list32"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
+            </TableRow>
+
             <View android:layout_width="match_parent"
                 android:id="@+id/l16"
                 android:background="@color/NFLBlue"
                 android:layout_height="1dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"/>
-
-            <TextView
-                android:text="Statistics"
-                android:id="@+id/list16"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="17dip"
-                android:paddingTop="5dp"
-                android:paddingBottom="5dp"
-                android:textColor="#000000"
-                android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"/>
 
             <TableRow
                 android:layout_width="match_parent"
