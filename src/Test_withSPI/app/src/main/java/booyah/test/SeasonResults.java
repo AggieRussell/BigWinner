@@ -16,7 +16,7 @@ import java.util.ArrayList;
  */
 public class SeasonResults extends Activity {
 
-//    private DBHelper db;
+    //    private DBHelper db;
     MediaPlayer playerWinsSound;
     MediaPlayer playerLosesSound;
 
@@ -47,6 +47,7 @@ public class SeasonResults extends Activity {
         final TextView year = (TextView) findViewById(R.id.yearView);
         final TextView season = (TextView) findViewById(R.id.seasonView);
         final TextView userAcc = (TextView) findViewById(R.id.userAcc);
+        final TextView predictorAcc = (TextView) findViewById(R.id.predictorAcc);
         final Button again = (Button) findViewById(R.id.againButton);
 
         String u = "User: " + p.getUser();
@@ -58,6 +59,9 @@ public class SeasonResults extends Activity {
 
         String uA = String.format("%.2f",p.getSeasonUserAccuracy()) + "%";
         userAcc.setText("Your accuracy: " + uA);
+
+        String pA = String.format("%.2f",p.getSeasonPredictorAccuracy()) + "%";
+        predictorAcc.setText("Predictor accuracy: " + pA);
 
         again.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

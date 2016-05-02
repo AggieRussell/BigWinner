@@ -30,6 +30,10 @@ public class WeekGames extends Activity {
     final ArrayList<RadioButton> away = new ArrayList<RadioButton>();
     final ArrayList<RadioGroup> games = new ArrayList<RadioGroup>();
     final ArrayList<View> lines = new ArrayList<View>();
+    final ArrayList<TextView> stats = new ArrayList<>();
+    final ArrayList<View.OnClickListener> listeners = new ArrayList<>();
+    TextView openLeft = null;
+    TextView openRight = null;
     MediaPlayer intenseSound;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,6 +163,22 @@ public class WeekGames extends Activity {
         games.add((RadioGroup) findViewById(R.id.rg14));
         games.add((RadioGroup) findViewById(R.id.rg15));
         games.add((RadioGroup) findViewById(R.id.rg16));
+        stats.add((TextView) findViewById(R.id.list1));
+        stats.add((TextView) findViewById(R.id.list2));
+        stats.add((TextView) findViewById(R.id.list3));
+        stats.add((TextView) findViewById(R.id.list4));
+        stats.add((TextView) findViewById(R.id.list5));
+        stats.add((TextView) findViewById(R.id.list6));
+        stats.add((TextView) findViewById(R.id.list7));
+        stats.add((TextView) findViewById(R.id.list8));
+        stats.add((TextView) findViewById(R.id.list9));
+        stats.add((TextView) findViewById(R.id.list10));
+        stats.add((TextView) findViewById(R.id.list11));
+        stats.add((TextView) findViewById(R.id.list12));
+        stats.add((TextView) findViewById(R.id.list13));
+        stats.add((TextView) findViewById(R.id.list14));
+        stats.add((TextView) findViewById(R.id.list15));
+        stats.add((TextView) findViewById(R.id.list16));
         lines.add((View) findViewById(R.id.l1));
         lines.add((View) findViewById(R.id.l2));
         lines.add((View) findViewById(R.id.l3));
@@ -168,9 +188,34 @@ public class WeekGames extends Activity {
         lines.add((View) findViewById(R.id.l7));
         for(int i = 0; i < games.size(); ++i) {
             games.get(i).setVisibility(View.GONE);
+            listeners.add(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(openLeft != null) {
+                        openLeft.setVisibility(View.GONE);
+                        openRight.setVisibility(View.GONE);
+                    }
+                    int textIndex = games.indexOf(v);
+                    if(textIndex%2 == 0) {
+                        openLeft = stats.get(textIndex);
+                        openRight = stats.get(textIndex+1);
+                    }
+                    else {
+                        openLeft = stats.get(textIndex-1);
+                        openRight = stats.get(textIndex);
+                    }
+                    openLeft.setVisibility(View.VISIBLE);
+                    openRight.setVisibility(View.VISIBLE);
+                }
+            });
+            games.get(i).setOnClickListener(listeners.get(i));
         }
         for(int i = 0; i < lines.size(); ++i) {
             lines.get(i).setVisibility(View.GONE);
+        }
+        for(int i=0; i < stats.size(); ++i) {
+            stats.get(i).setVisibility(View.GONE);
+            stats.get(i).setText("Statistics");
         }
     }
 
@@ -268,6 +313,12 @@ public class WeekGames extends Activity {
                 case "Eagles" :
                     away.get(i).setButtonDrawable(R.drawable.eagles_selector);
                     break;
+<<<<<<< HEAD
+=======
+                case "Cardinals" :
+                    away.get(i).setButtonDrawable(R.drawable.cardinals_selector);
+                    break;
+>>>>>>> e297e5bfdd611888222b1920220ab6f692250e9b
                 case "Steelers" :
                     away.get(i).setButtonDrawable(R.drawable.steelers_selector);
                     break;
@@ -368,6 +419,12 @@ public class WeekGames extends Activity {
                 case "Eagles" :
                     home.get(i).setButtonDrawable(R.drawable.eagles_selector);
                     break;
+<<<<<<< HEAD
+=======
+                case "Cardinals" :
+                    home.get(i).setButtonDrawable(R.drawable.cardinals_selector);
+                    break;
+>>>>>>> e297e5bfdd611888222b1920220ab6f692250e9b
                 case "Steelers" :
                     home.get(i).setButtonDrawable(R.drawable.steelers_selector);
                     break;

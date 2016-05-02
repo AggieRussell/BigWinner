@@ -91,13 +91,17 @@
                             android:text="Team 1"
                             android:id="@+id/radioButton1"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
 
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton2"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
                     </RadioGroup>
 
                     <View
@@ -123,13 +127,50 @@
                     <RadioButton
                         android:text="Team 3"
                         android:id="@+id/radioButton3"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
 
                     <RadioButton
                         android:text="Team 4"
                         android:id="@+id/radioButton4"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list1"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list2"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
@@ -166,13 +207,17 @@
                             android:text="Team 5"
                             android:id="@+id/radioButton5"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
 
                         <RadioButton
                             android:text="Team 6"
                             android:id="@+id/radioButton6"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
                     </RadioGroup>
 
                     <View
@@ -197,13 +242,50 @@
                     <RadioButton
                         android:text="Team 7"
                         android:id="@+id/radioButton7"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
 
                     <RadioButton
                         android:text="Team 8"
                         android:id="@+id/radioButton8"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
                 </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats2">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list3"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list4"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
+
             </TableRow>
 
             <View android:layout_width="match_parent"
@@ -239,13 +321,17 @@
                             android:text="Team 9"
                             android:id="@+id/radioButton9"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
 
                         <RadioButton
                             android:text="Team 10"
                             android:id="@+id/radioButton10"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
                     </RadioGroup>
 
                     <View
@@ -270,13 +356,50 @@
                     <RadioButton
                         android:text="Team 11"
                         android:id="@+id/radioButton11"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
 
                     <RadioButton
                         android:text="Team 12"
                         android:id="@+id/radioButton12"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats3">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list5"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list6"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
@@ -313,13 +436,17 @@
                             android:text="Team 13"
                             android:id="@+id/radioButton13"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
 
                         <RadioButton
                             android:text="Team 14"
                             android:id="@+id/radioButton14"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
                     </RadioGroup>
 
                     <View
@@ -344,13 +471,50 @@
                     <RadioButton
                         android:text="Team 15"
                         android:id="@+id/radioButton15"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
 
                     <RadioButton
                         android:text="Team 16"
                         android:id="@+id/radioButton16"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats4">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list7"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list8"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
@@ -425,13 +589,50 @@
                     <RadioButton
                         android:text="Team 19"
                         android:id="@+id/radioButton19"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
 
                     <RadioButton
                         android:text="Team 20"
                         android:id="@+id/radioButton20"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats5">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list9"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list10"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
@@ -468,13 +669,17 @@
                             android:text="Team 21"
                             android:id="@+id/radioButton21"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
 
                         <RadioButton
                             android:text="Team 22"
                             android:id="@+id/radioButton22"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
                     </RadioGroup>
 
                     <View
@@ -499,13 +704,50 @@
                     <RadioButton
                         android:text="Team 23"
                         android:id="@+id/radioButton23"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
 
                     <RadioButton
                         android:text="Team 24"
                         android:id="@+id/radioButton24"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats6">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list11"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list12"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
@@ -542,13 +784,17 @@
                             android:text="Team 25"
                             android:id="@+id/radioButton25"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
 
                         <RadioButton
                             android:text="Team 26"
                             android:id="@+id/radioButton26"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
                     </RadioGroup>
 
                     <View
@@ -573,13 +819,50 @@
                     <RadioButton
                         android:text="Team 27"
                         android:id="@+id/radioButton27"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
 
                     <RadioButton
                         android:text="Team 28"
                         android:id="@+id/radioButton28"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats7">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list13"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list14"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 
@@ -616,13 +899,17 @@
                             android:text="Team 29"
                             android:id="@+id/radioButton29"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
 
                         <RadioButton
                             android:text="Team 30"
                             android:id="@+id/radioButton30"
                             android:layout_column="0"
-                            android:checked="false" />
+                            android:checked="false"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"/>
                     </RadioGroup>
 
                     <View
@@ -647,13 +934,50 @@
                     <RadioButton
                         android:text="Team 31"
                         android:id="@+id/radioButton31"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
 
                     <RadioButton
                         android:text="Team 32"
                         android:id="@+id/radioButton32"
-                        android:checked="false" />
+                        android:checked="false"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"/>
                 </RadioGroup>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/stats8">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="StatsGame1"
+                    android:id="@+id/list15"
+                    android:layout_weight="2"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/list16"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="StatsGame2" />
 
             </TableRow>
 

@@ -35,6 +35,7 @@ public class WeekResults extends Activity {
         final TextView year = (TextView) findViewById(R.id.yearView);
         final TextView week = (TextView) findViewById(R.id.weekView);
         final TextView userAcc = (TextView) findViewById(R.id.userAcc);
+        final TextView predictorAcc = (TextView) findViewById(R.id.predictorAcc);
         final Button next = (Button) findViewById(R.id.nextButton);
 
         String u = "User: " + p.getUser();
@@ -54,6 +55,9 @@ public class WeekResults extends Activity {
 
         String uA = String.format("%.2f",p.getWklyUserAccuracy()) + "%";
         userAcc.setText("Your accuracy: " + uA);
+
+        String pA = String.format("%.2f",p.getWklyPredictorAccuracy()) + "%";
+        predictorAcc.setText("Predictor: " + pA);
 
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
