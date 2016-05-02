@@ -313,12 +313,6 @@ public class WeekGames extends Activity {
                 case "Eagles" :
                     away.get(i).setButtonDrawable(R.drawable.eagles_selector);
                     break;
-<<<<<<< HEAD
-=======
-                case "Cardinals" :
-                    away.get(i).setButtonDrawable(R.drawable.cardinals_selector);
-                    break;
->>>>>>> e297e5bfdd611888222b1920220ab6f692250e9b
                 case "Steelers" :
                     away.get(i).setButtonDrawable(R.drawable.steelers_selector);
                     break;
@@ -419,12 +413,6 @@ public class WeekGames extends Activity {
                 case "Eagles" :
                     home.get(i).setButtonDrawable(R.drawable.eagles_selector);
                     break;
-<<<<<<< HEAD
-=======
-                case "Cardinals" :
-                    home.get(i).setButtonDrawable(R.drawable.cardinals_selector);
-                    break;
->>>>>>> e297e5bfdd611888222b1920220ab6f692250e9b
                 case "Steelers" :
                     home.get(i).setButtonDrawable(R.drawable.steelers_selector);
                     break;
