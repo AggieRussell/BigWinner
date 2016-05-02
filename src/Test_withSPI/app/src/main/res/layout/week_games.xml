@@ -53,25 +53,27 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Away"
+            android:text="AWAY"
+            android:textColor="@color/Black"
             android:gravity="center"
             android:id="@+id/awayTeam"
             android:padding="10dp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/homeTeam"
+            android:textColor="@color/Black"
             android:padding="10dp"
             android:gravity="center"
-            android:text="Home" />
+            android:text="HOME" />
     </TableRow>
 
     <ScrollView>
@@ -97,13 +99,12 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal"
                         android:id="@+id/rg1"
                         android:visibility="visible">
@@ -111,8 +112,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -121,12 +122,14 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -164,13 +167,12 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal"
                         android:id="@+id/rg2"
                         android:visibility="visible">
@@ -178,8 +180,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -188,12 +190,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -231,13 +236,12 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
                         android:orientation="horizontal"
                         android:id="@+id/rg3"
                         android:visibility="visible">
@@ -245,8 +249,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -255,12 +259,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -298,13 +305,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg4"
                         android:visibility="visible">
@@ -312,8 +319,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -322,12 +329,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -365,13 +375,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg5"
                         android:visibility="visible">
@@ -379,8 +389,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -389,12 +399,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -432,13 +445,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg6"
                         android:visibility="visible">
@@ -446,8 +459,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -456,11 +469,14 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
                             android:checked="false" />
 
                     </RadioGroup>
@@ -499,13 +515,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg7"
                         android:visibility="visible">
@@ -513,8 +529,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -523,12 +539,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton14"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -566,13 +585,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg8"
                         android:visibility="visible">
@@ -580,8 +599,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton15"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -590,12 +609,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton16"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -633,13 +655,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg9"
                         android:visibility="visible">
@@ -647,8 +669,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -657,12 +679,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton18"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -700,13 +725,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg10"
                         android:visibility="visible">
@@ -714,8 +739,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton19"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -724,12 +749,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton20"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -767,13 +795,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg11"
                         android:visibility="visible">
@@ -781,8 +809,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton21"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -791,12 +819,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton22"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -834,13 +865,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg12"
                         android:visibility="visible">
@@ -848,8 +879,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton23"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -858,12 +889,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton24"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -901,13 +935,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg13"
                         android:visibility="visible">
@@ -915,8 +949,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton25"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -925,12 +959,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton26"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -968,13 +1005,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg14"
                         android:visibility="visible">
@@ -982,8 +1019,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton27"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -992,12 +1029,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -1035,13 +1075,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg15"
                         android:visibility="visible">
@@ -1049,8 +1089,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton29"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -1059,12 +1099,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton30"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 
@@ -1102,13 +1145,13 @@
 
                     <RadioGroup
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="wrap_content"
                         android:layout_column="0"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginTop="5dp"
-                        android:layout_weight="1"
+
                         android:orientation="horizontal"
                         android:id="@+id/rg16"
                         android:visibility="visible">
@@ -1116,8 +1159,8 @@
                         <RadioButton
                             android:text="Team 1"
                             android:id="@+id/radioButton31"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
@@ -1126,12 +1169,15 @@
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton32"
-                            android:layout_width="wrap_content"
-                            android:layout_height="45dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:paddingStart="5dp"
-                            android:paddingLeft="5dp"
-                            android:checked="false" />
+                            android:drawablePadding="5dp"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_gravity="right"
+                            android:button="@null"
+                            android:checked="false"  />
 
                     </RadioGroup>
 

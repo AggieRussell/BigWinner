@@ -347,100 +347,100 @@ public class WeekGames extends Activity {
             }
             switch (h.get(i)) {
                 case "Cardinals" :
-                    home.get(i).setButtonDrawable(R.drawable.cardinals_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.cardinals_selector, 0);
                     break;
                 case "Falcons" :
-                    home.get(i).setButtonDrawable(R.drawable.falcons_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.falcons_selector, 0);
                     break;
                 case "Ravens" :
-                    home.get(i).setButtonDrawable(R.drawable.ravens_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ravens_selector, 0);
                     break;
                 case "Bills" :
-                    home.get(i).setButtonDrawable(R.drawable.bills_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.bills_selector, 0);
                     break;
                 case "Panthers" :
-                    home.get(i).setButtonDrawable(R.drawable.panthers_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.panthers_selector, 0);
                     break;
                 case "Bears" :
-                    home.get(i).setButtonDrawable(R.drawable.bears_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.bears_selector, 0);
                     break;
                 case "Bengals" :
-                    home.get(i).setButtonDrawable(R.drawable.bengals_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.bengals_selector, 0);
                     break;
                 case "Browns" :
-                    home.get(i).setButtonDrawable(R.drawable.browns_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.browns_selector, 0);
                     break;
                 case "Cowboys" :
-                    home.get(i).setButtonDrawable(R.drawable.cowboys_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.cowboys_selector, 0);
                     break;
                 case "Broncos" :
-                    home.get(i).setButtonDrawable(R.drawable.broncos_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.broncos_selector, 0);
                     break;
                 case "Lions" :
-                    home.get(i).setButtonDrawable(R.drawable.lions_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.lions_selector, 0);
                     break;
                 case "Packers" :
-                    home.get(i).setButtonDrawable(R.drawable.packers_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.packers_selector, 0);
                     break;
                 case "Texans" :
-                    home.get(i).setButtonDrawable(R.drawable.texans_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.texans_selector, 0);
                     break;
                 case "Colts" :
-                    home.get(i).setButtonDrawable(R.drawable.colts_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.colts_selector, 0);
                     break;
                 case "Jaguars" :
-                    home.get(i).setButtonDrawable(R.drawable.jaguars_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.jaguars_selector, 0);
                     break;
                 case "Chiefs" :
-                    home.get(i).setButtonDrawable(R.drawable.chiefs_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.chiefs_selector, 0);
                     break;
                 case "Dolphins" :
-                    home.get(i).setButtonDrawable(R.drawable.dolphins_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.dolphins_selector, 0);
                     break;
                 case "Vikings" :
-                    home.get(i).setButtonDrawable(R.drawable.vikings_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.vikings_selector, 0);
                     break;
                 case "Patriots" :
-                    home.get(i).setButtonDrawable(R.drawable.patriots_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.patriots_selector, 0);
                     break;
                 case "Saints" :
-                    home.get(i).setButtonDrawable(R.drawable.saints_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.saints_selector, 0);
                     break;
                 case "Giants" :
-                    home.get(i).setButtonDrawable(R.drawable.giants_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.giants_selector, 0);
                     break;
                 case "Jets" :
-                    home.get(i).setButtonDrawable(R.drawable.jets_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.jets_selector, 0);
                     break;
                 case "Raiders" :
-                    home.get(i).setButtonDrawable(R.drawable.raiders_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.raiders_selector, 0);
                     break;
                 case "Eagles" :
-                    home.get(i).setButtonDrawable(R.drawable.eagles_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.eagles_selector, 0);
                     break;
                 case "Steelers" :
-                    home.get(i).setButtonDrawable(R.drawable.steelers_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.steelers_selector, 0);
                     break;
                 case "Chargers" :
-                    home.get(i).setButtonDrawable(R.drawable.chargers_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.chargers_selector, 0);
                     break;
                 case "49ers" :
-                    home.get(i).setButtonDrawable(R.drawable.forty_niners_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.forty_niners_selector, 0);
                     break;
                 case "Seahawks" :
-                    home.get(i).setButtonDrawable(R.drawable.seahawks_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.seahawks_selector, 0);
                     break;
                 case "Rams" :
-                    home.get(i).setButtonDrawable(R.drawable.rams_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.rams_selector, 0);
                     break;
                 case "Buccaneers" :
-                    home.get(i).setButtonDrawable(R.drawable.buccaneers_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.buccaneers_selector, 0);
                     break;
                 case "Titans" :
-                    home.get(i).setButtonDrawable(R.drawable.titans_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.titans_selector, 0);
                     break;
                 case "Redskins" :
-                    home.get(i).setButtonDrawable(R.drawable.redskins_selector);
+                    home.get(i).setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.redskins_selector, 0);
                     break;
                 default :
                     break;
