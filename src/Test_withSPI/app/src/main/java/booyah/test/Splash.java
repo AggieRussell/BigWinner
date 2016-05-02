@@ -21,8 +21,9 @@ public class Splash extends Activity {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         introSong = MediaPlayer.create(this,R.raw.ftheme);
-        setContentView(R.layout.splash);
         introSong.start();
+        setContentView(R.layout.splash);
+
 
         /* New Handler to start the Menu-Activity
          * and close this Splash-Screen after some seconds.*/
