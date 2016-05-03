@@ -477,39 +477,24 @@ public class WeekResults extends Activity {
         ArrayList<String> w = p.getWinners(db);
         ArrayList<String> h = p.getHome();
         ArrayList<String> a = p.getAway();
-        ArrayList<String> predictions = p.getPredictions();
+    //    ArrayList<String> predictions = p.getPredictions();
         ArrayList<String> picks = p.getPicks();
 
         for (int i = 0; i < a.size(); ++i) {
+            if (w.contains(a.get(i))) {
+                away.get(i).setBackgroundResource(R.drawable.greenrect);
+            }
+            else {
+                home.get(i).setBackgroundResource(R.drawable.greenrect);
+            }
+
             //user picked to win
             if (picks.contains(a.get(i))) {
                 away.get(i).setChecked(true);
-                //actually won
-                if (w.contains(a.get(i))) {
-                    //            away.get(i).setBackgroundColor(0xFFAFE4C8);
-                    away.get(i).setBackgroundResource(R.drawable.greenrect);
-                 //   away.get(i).setHeight(40);
-                }
-                //didn't win
-                else {
-                    //            away.get(i).setBackgroundColor(0xFFFF9595);
-                 //   away.get(i).setBackgroundResource(R.drawable.redrect);
-                 //   away.get(i).setHeight(40);
-                }
             }
             //user picked to win
             if (picks.contains(h.get(i))) {
                 home.get(i).setChecked(true);
-                //actually won
-                if (w.contains(h.get(i))) {
-                    //            home.get(i).setBackgroundColor(0xFFAFE4C8);
-                    home.get(i).setBackgroundResource(R.drawable.greenrect);
-                }
-                //didn't win
-                else {
-                    //            home.get(i).setBackgroundColor(0xFFFF9595);
-                 //   home.get(i).setBackgroundResource(R.drawable.redrect);
-                }
             }
         }
 
