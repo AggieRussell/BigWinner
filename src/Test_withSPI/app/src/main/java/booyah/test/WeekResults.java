@@ -235,25 +235,6 @@ public class WeekResults extends Activity {
             stats.get(i).setVisibility(View.GONE);
             stats.get(i).setText("Statistics");
         }
-        logos.add((ImageView) findViewById(R.id.logo1));
-        logos.add((ImageView) findViewById(R.id.logo2));
-        logos.add((ImageView) findViewById(R.id.logo3));
-        logos.add((ImageView) findViewById(R.id.logo4));
-        logos.add((ImageView) findViewById(R.id.logo5));
-        logos.add((ImageView) findViewById(R.id.logo6));
-        logos.add((ImageView) findViewById(R.id.logo7));
-        logos.add((ImageView) findViewById(R.id.logo8));
-        logos.add((ImageView) findViewById(R.id.logo9));
-        logos.add((ImageView) findViewById(R.id.logo10));
-        logos.add((ImageView) findViewById(R.id.logo11));
-        logos.add((ImageView) findViewById(R.id.logo12));
-        logos.add((ImageView) findViewById(R.id.logo13));
-        logos.add((ImageView) findViewById(R.id.logo14));
-        logos.add((ImageView) findViewById(R.id.logo15));
-        logos.add((ImageView) findViewById(R.id.logo16));
-        for (int i = 0; i<logos.size(); ++i) {
-            logos.get(i).setVisibility(View.INVISIBLE);
-        }
     }
 
     private void setButtons(ArrayList<String> h, ArrayList<String> a, ArrayList<String> predictions) {
@@ -507,13 +488,13 @@ public class WeekResults extends Activity {
                 if (w.contains(a.get(i))) {
                     //            away.get(i).setBackgroundColor(0xFFAFE4C8);
                     away.get(i).setBackgroundResource(R.drawable.greenrect);
-                    away.get(i).setHeight(40);
+                 //   away.get(i).setHeight(40);
                 }
                 //didn't win
                 else {
                     //            away.get(i).setBackgroundColor(0xFFFF9595);
-                    away.get(i).setBackgroundResource(R.drawable.redrect);
-                    away.get(i).setHeight(40);
+                 //   away.get(i).setBackgroundResource(R.drawable.redrect);
+                 //   away.get(i).setHeight(40);
                 }
             }
             //user picked to win
@@ -527,7 +508,7 @@ public class WeekResults extends Activity {
                 //didn't win
                 else {
                     //            home.get(i).setBackgroundColor(0xFFFF9595);
-                    home.get(i).setBackgroundResource(R.drawable.redrect);
+                 //   home.get(i).setBackgroundResource(R.drawable.redrect);
                 }
             }
         }
@@ -537,7 +518,7 @@ public class WeekResults extends Activity {
             home.get(i).setClickable(false);
         }
 
-        for(int i = 0; i < w.size(); ++i) {
+    /*    for(int i = 0; i < w.size(); ++i) {
             int logoIndex;
             if(a.contains(w.get(i))) {
                 logoIndex = a.indexOf(w.get(i));
@@ -550,9 +531,13 @@ public class WeekResults extends Activity {
                 //display logo
                 logos.get(logoIndex).setVisibility(View.VISIBLE);
             }
+<<<<<<< HEAD
         }
         for (int i = w.size(); i<logos.size(); ++i) {
             logos.get(i).setVisibility(View.GONE);
         }
+=======
+        }*/
+>>>>>>> 0357f82bb461b831007b6f4172fe6e5016b985a7
     }
 }

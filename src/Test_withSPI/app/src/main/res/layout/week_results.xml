@@ -128,15 +128,6 @@
                             android:adjustViewBounds="false"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo1"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton2"
@@ -231,15 +222,6 @@
                             android:paddingLeft="5dp"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo2"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton4"
@@ -333,15 +315,6 @@
                             android:paddingLeft="5dp"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo3"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton6"
@@ -433,15 +406,6 @@
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
                             android:checked="false" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo4"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
 
                         <RadioButton
                             android:text="Team 2"
@@ -535,15 +499,6 @@
                             android:paddingLeft="5dp"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo5"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton10"
@@ -635,15 +590,6 @@
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
                             android:checked="false" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo6"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
 
                         <RadioButton
                             android:text="Team 2"
@@ -737,15 +683,6 @@
                             android:paddingLeft="5dp"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo7"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton14"
@@ -837,15 +774,6 @@
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
                             android:checked="false" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo8"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
 
                         <RadioButton
                             android:text="Team 2"
@@ -939,15 +867,6 @@
                             android:paddingLeft="5dp"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo9"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton18"
@@ -1040,15 +959,6 @@
                             android:paddingLeft="5dp"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo10"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton20"
@@ -1140,16 +1050,6 @@
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
                             android:checked="false" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo11"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton22"
@@ -1241,15 +1141,6 @@
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
                             android:checked="false" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo12"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
 
                         <RadioButton
                             android:text="Team 2"
@@ -1343,15 +1234,6 @@
                             android:paddingLeft="5dp"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo13"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton26"
@@ -1443,15 +1325,6 @@
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
                             android:checked="false" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo14"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
 
                         <RadioButton
                             android:text="Team 2"
@@ -1545,15 +1418,6 @@
                             android:paddingLeft="5dp"
                             android:checked="false" />
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo15"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
-
                         <RadioButton
                             android:text="Team 2"
                             android:id="@+id/radioButton30"
@@ -1645,15 +1509,6 @@
                             android:paddingStart="5dp"
                             android:paddingLeft="5dp"
                             android:checked="false" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/logo16"
-                            android:src="@drawable/icon_small"
-                            android:maxWidth="20px"
-                            android:layout_gravity="center_vertical"
-                            android:layout_weight="0"/>
 
                         <RadioButton
                             android:text="Team 2"
