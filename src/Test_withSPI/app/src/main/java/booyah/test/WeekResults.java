@@ -532,7 +532,5 @@ public class WeekResults extends Activity {
                 logos.get(logoIndex).setVisibility(View.VISIBLE);
             }
         }*/
-
-
     }
 }

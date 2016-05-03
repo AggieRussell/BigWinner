@@ -260,7 +260,7 @@ public class WeekGames extends Activity {
             away.get(i).setText(a.get(i));
             home.get(i).setText(h.get(i));
             games.get(i).setVisibility(View.VISIBLE);
-            if (i < games.size())
+            if (i < games.size()-1)
                 lines.get(i).setVisibility(View.VISIBLE);
 
             if(predictions.contains(a.get(i))) {
