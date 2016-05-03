@@ -160,6 +160,9 @@ public class WeekResults extends Activity {
             games.get(i).setVisibility(View.VISIBLE);
             winners.get(i).setVisibility(View.VISIBLE);
         }
+        for (int i = w.size(); i<logos.size(); ++i) {
+            logos.get(i).setVisibility(View.GONE);
+        }
     }
 
 }
