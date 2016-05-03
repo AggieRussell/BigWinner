@@ -86,7 +86,7 @@
                 android:maxWidth="150dp"
                 android:adjustViewBounds="true"
                 android:id="@+id/imageView2"
-                android:src="@drawable/instructions3"
+                android:src="@drawable/instructions5"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"

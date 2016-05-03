@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Big Winner</string>
     <string name="dir1">Big Winner is both a tool and a game.\n\nUpon logging in after entering your name and selecting a season, Big Winner will display all the NFL games starting with the first week of the season. The team Big Winner thinks will win will be in green, but you get to test your skills by clicking the logo of the team you think will win each game. Clicking on a matchup will bring up team statistics for both teams. Make sure you pick a winner for each game.</string>
-    <string name="dir2">After you submit your picks, Big Winner will display the results of each game that week.  The teams you picked will have the team logo highlighted in green.  The ones that Big Winner picked will have the name highlighted in blue.  The team that actually won will be highlighted in green.</string>
+    <string name="dir2">After you submit your picks, Big Winner will display the results of each game that week.  The teams you picked will have the team logo highlighted in green.  The ones that Big Winner picked will have the name highlighted in blue.  The team that actually won will be highlighted in green if you picked correctly or red if you picked incorrectly.</string>
     <string name="dir3">You\'ll be able to track your accuracy from week to week against that of Big Winner, with the overall accuracy displayed once you reach the end of the season.\n\nDo you have what it takes to beat Big Winner?</string>
     <string-array name="season_array">
         <item>2015</item>
