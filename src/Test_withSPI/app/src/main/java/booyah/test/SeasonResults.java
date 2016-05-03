@@ -108,9 +108,20 @@ public class SeasonResults extends Activity {
         ArrayList<Column> scores = db.getScores();
 
         for(int i = 0; i < scores.get(0).size(); ++i){
-            listOfYears.get(i).setText( (String) scores.get(0).getValue(i));
-            topScores.get(i).setText( (String) scores.get(1).getValue(i));
-            recentScores.get(i).setText( (String) scores.get(2).getValue(i));
+            String topStr = (String) scores.get(1).getValue(i);
+            String recStr = (String) scores.get(2).getValue(i);
+            if(topStr.equals("--"))
+                ;
+            else
+                topStr = String.format("%.2f", Double.parseDouble(topStr)) + "%";
+
+            if(recStr.equals("--"))
+                ;
+            else
+                recStr = String.format("%.2f", Double.parseDouble(recStr)) + "%";
+            listOfYears.get(i).setText((String) scores.get(0).getValue(i));
+            topScores.get(i).setText( topStr);
+            recentScores.get(i).setText( recStr);
 
             listOfYears.get(i).setVisibility(View.VISIBLE);
             topScores.get(i).setVisibility(View.VISIBLE);
