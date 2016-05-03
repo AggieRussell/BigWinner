@@ -531,13 +531,12 @@ public class WeekResults extends Activity {
                 //display logo
                 logos.get(logoIndex).setVisibility(View.VISIBLE);
             }
-<<<<<<< HEAD
+
         }
         for (int i = w.size(); i<logos.size(); ++i) {
             logos.get(i).setVisibility(View.GONE);
-        }
-=======
+
         }*/
->>>>>>> 0357f82bb461b831007b6f4172fe6e5016b985a7
+
     }
 }
