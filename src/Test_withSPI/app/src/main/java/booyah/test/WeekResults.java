@@ -482,10 +482,20 @@ public class WeekResults extends Activity {
 
         for (int i = 0; i < a.size(); ++i) {
             if (w.contains(a.get(i))) {
-                away.get(i).setBackgroundResource(R.drawable.greenrect);
+                if(picks.contains(a.get(i))) {
+                    away.get(i).setBackgroundResource(R.drawable.greenrect);
+                }
+                else {
+                    away.get(i).setBackgroundResource(R.drawable.redrect);
+                }
             }
             else {
-                home.get(i).setBackgroundResource(R.drawable.greenrect);
+                if(picks.contains(h.get(i))) {
+                    home.get(i).setBackgroundResource(R.drawable.greenrect);
+                }
+                else {
+                    home.get(i).setBackgroundResource(R.drawable.redrect);
+                }
             }
 
             //user picked to win
@@ -516,13 +526,10 @@ public class WeekResults extends Activity {
                 //display logo
                 logos.get(logoIndex).setVisibility(View.VISIBLE);
             }
-<<<<<<< HEAD
         }
         for (int i = w.size(); i<logos.size(); ++i) {
             logos.get(i).setVisibility(View.GONE);
         }
-=======
         }*/
->>>>>>> 0357f82bb461b831007b6f4172fe6e5016b985a7
     }
 }
